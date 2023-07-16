@@ -1,0 +1,47 @@
+// AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
+//
+// PIO Unified Debugger
+//
+// Documentation: https://docs.platformio.org/page/plus/debugging.html
+// Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug",
+            "executable": "d:/Gdrive/PRP6-20220919T174647Z-001/PRP6/Software/Stepper_driver_board_github/.pio/build/genericSTM32F446RE/firmware.elf",
+            "projectEnvName": "genericSTM32F446RE",
+            "toolchainBinDir": "C:/Users/ROPE/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/ROPE/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd",
+            "preLaunchTask": {
+                "type": "PlatformIO",
+                "task": "Pre-Debug"
+            }
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (skip Pre-Debug)",
+            "executable": "d:/Gdrive/PRP6-20220919T174647Z-001/PRP6/Software/Stepper_driver_board_github/.pio/build/genericSTM32F446RE/firmware.elf",
+            "projectEnvName": "genericSTM32F446RE",
+            "toolchainBinDir": "C:/Users/ROPE/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/ROPE/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd"
+        },
+        {
+            "type": "platformio-debug",
+            "request": "launch",
+            "name": "PIO Debug (without uploading)",
+            "executable": "d:/Gdrive/PRP6-20220919T174647Z-001/PRP6/Software/Stepper_driver_board_github/.pio/build/genericSTM32F446RE/firmware.elf",
+            "projectEnvName": "genericSTM32F446RE",
+            "toolchainBinDir": "C:/Users/ROPE/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "C:/Users/ROPE/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd",
+            "loadMode": "manual"
+        }
+    ]
+}

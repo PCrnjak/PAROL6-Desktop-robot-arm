@@ -1,0 +1,9 @@
+<map id="TMC2130Stepper::en_pwm_mode" name="TMC2130Stepper::en_pwm_mode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,149,90"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html#abf1aaf21b2ed62c07626fa3fd69577a5" title=" " alt="" coords="197,49,341,90"/>
+<area shape="rect" id="node3" href="$class_t_m_c2130_stepper.html#aee84a9abfc84b387c6ae5658f90bf684" title=" " alt="" coords="389,56,565,83"/>
+<area shape="rect" id="node4" href="$class_t_m_c2130_stepper.html#aed0175bff6e80ebc14e0d2606283cbe0" title=" " alt="" coords="613,56,768,83"/>
+<area shape="rect" id="node5" href="$class_t_m_c2130_stepper.html#aed8aa4583943e649dbf3bb1c1da90d63" title=" " alt="" coords="816,5,1019,32"/>
+<area shape="rect" id="node6" href="$class_s_w___s_p_i_class.html#af260fdc0af3f1312b106483161e559c3" title=" " alt="" coords="1067,81,1223,108"/>
+<area shape="rect" id="node7" href="$class_s_w___s_p_i_class.html#a1b7600aa1d9571c103718c5d3e376675" title=" " alt="" coords="832,107,1003,133"/>
+</map>

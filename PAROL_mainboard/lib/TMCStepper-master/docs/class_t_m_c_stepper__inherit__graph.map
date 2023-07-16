@@ -1,0 +1,11 @@
+<map id="TMCStepper" name="TMCStepper">
+<area shape="rect" id="node1" title=" " alt="" coords="93,5,187,32"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html" title=" " alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node7" href="$class_t_m_c2208_stepper.html" title=" " alt="" coords="152,80,275,107"/>
+<area shape="rect" id="node3" href="$class_t_m_c2160_stepper.html" title=" " alt="" coords="5,155,128,181"/>
+<area shape="rect" id="node4" href="$class_t_m_c5130_stepper.html" title=" " alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node5" href="$class_t_m_c5160_stepper.html" title=" " alt="" coords="5,304,128,331"/>
+<area shape="rect" id="node6" href="$class_t_m_c5161_stepper.html" title=" " alt="" coords="5,379,128,405"/>
+<area shape="rect" id="node8" href="$class_t_m_c2209_stepper.html" title=" " alt="" coords="152,155,275,181"/>
+<area shape="rect" id="node9" href="$class_t_m_c2224_stepper.html" title=" " alt="" coords="299,155,421,181"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="TMC2160Stepper::PWMCONF" name="TMC2160Stepper::PWMCONF">
+<area shape="rect" id="node1" title=" " alt="" coords="424,81,623,108"/>
+<area shape="rect" id="node2" href="$class_t_m_c2160_stepper.html#a7ee48b042245ef5b3968b82029d1404c" title=" " alt="" coords="215,5,376,32"/>
+<area shape="rect" id="node4" href="$class_t_m_c2160_stepper.html#ae8035a0cb8151d5227d8528e540e637d" title=" " alt="" coords="216,56,375,83"/>
+<area shape="rect" id="node5" href="$class_t_m_c5130_stepper.html#a55e61f5181d74f26c9d35c54e4436d7a" title=" " alt="" coords="216,107,375,133"/>
+<area shape="rect" id="node6" href="$class_t_m_c5160_stepper.html#a5a12974304588f9d01898d91ba854b87" title=" " alt="" coords="216,157,375,184"/>
+<area shape="rect" id="node3" href="$class_t_m_c5130_stepper.html#a897212f81817cdaee4536d642badc149" title=" " alt="" coords="5,5,167,32"/>
+</map>

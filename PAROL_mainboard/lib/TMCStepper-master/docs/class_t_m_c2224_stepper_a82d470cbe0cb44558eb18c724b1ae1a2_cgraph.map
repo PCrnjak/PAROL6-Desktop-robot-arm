@@ -1,0 +1,12 @@
+<map id="TMC2224Stepper::pdn_uart" name="TMC2224Stepper::pdn_uart">
+<area shape="rect" id="node1" title=" " alt="" coords="5,115,185,141"/>
+<area shape="rect" id="node2" href="$class_t_m_c2224_stepper.html#aa5fa836e15992bc49e0297ef2126f725" title=" " alt="" coords="233,115,388,141"/>
+<area shape="rect" id="node3" href="$class_t_m_c2208_stepper.html#a2fae2050849c3ab7968012def8ea1cc5" title=" " alt="" coords="436,115,591,141"/>
+<area shape="rect" id="node4" href="$class_t_m_c2208_stepper.html#a3e1f6a10aa1e3e41dc2594dbe1ea8a1d" title=" " alt="" coords="639,39,860,65"/>
+<area shape="rect" id="node9" href="$class_s_switch.html#a6ff09d0850d551571dc333fb74ff8628" title=" " alt="" coords="694,89,805,116"/>
+<area shape="rect" id="node10" href="$class_t_m_c2208_stepper.html#a409c19fa6b052a370a317d061bf9af4e" title=" " alt="" coords="659,140,840,167"/>
+<area shape="rect" id="node5" href="$class_t_m_c2208_stepper.html#a4ec5d2b2f5a31259c7aba1f3208d63b8" title=" " alt="" coords="927,5,1082,32"/>
+<area shape="rect" id="node7" href="$class_t_m_c2208_stepper.html#ae561da4ec7c40830e97bf4dc8cf700fb" title=" " alt="" coords="908,56,1101,83"/>
+<area shape="rect" id="node8" href="$class_t_m_c2208_stepper.html#a7dd83313385079099b0622957786a979" title=" " alt="" coords="924,107,1085,149"/>
+<area shape="rect" id="node6" href="$class_t_m_c2208_stepper.html#a5441dd87d0bcea4ffc309cb012166a57" title=" " alt="" coords="1149,99,1304,125"/>
+</map>

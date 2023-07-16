@@ -1,0 +1,9 @@
+<map id="TMC2130Stepper::DCCTRL" name="TMC2130Stepper::DCCTRL">
+<area shape="rect" id="node1" title=" " alt="" coords="229,132,409,159"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html#aafabeef9ffd19821104d0b00488b7115" title=" " alt="" coords="11,5,176,32"/>
+<area shape="rect" id="node3" href="$class_t_m_c2130_stepper.html#a4781278716fa3c2a5204bb1b45da4fee" title=" " alt="" coords="5,56,181,83"/>
+<area shape="rect" id="node4" href="$class_t_m_c2130_stepper.html#ac62d32ad08be0a34b411bdd5a8489246" title=" " alt="" coords="14,107,173,133"/>
+<area shape="rect" id="node5" href="$class_t_m_c2160_stepper.html#ae8035a0cb8151d5227d8528e540e637d" title=" " alt="" coords="14,157,173,184"/>
+<area shape="rect" id="node6" href="$class_t_m_c5130_stepper.html#a55e61f5181d74f26c9d35c54e4436d7a" title=" " alt="" coords="14,208,173,235"/>
+<area shape="rect" id="node7" href="$class_t_m_c5160_stepper.html#a5a12974304588f9d01898d91ba854b87" title=" " alt="" coords="14,259,173,285"/>
+</map>

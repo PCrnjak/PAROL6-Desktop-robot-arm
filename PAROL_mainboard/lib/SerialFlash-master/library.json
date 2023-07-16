@@ -1,0 +1,12 @@
+{
+  "name": "SerialFlash",
+  "keywords": "serial, flash, spi",
+  "description": "SerialFlash provides low-latency, high performance access to SPI Flash memory with a filesystem-like interface. Familiar file-based functions, similar to the SD library, are used to access data.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/PaulStoffregen/SerialFlash.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}
