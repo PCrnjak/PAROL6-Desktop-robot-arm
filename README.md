@@ -7,14 +7,11 @@ Join [Discord](https://discord.com/invite/prjUvjmGpZ ) community!
 
 PAROL6 is high performance 3D printed desktop robotic arm. Design aproach of PAROL6 was to be similar to industrial robots in terms of mechanical design, control software and usability. Control software, GUI and robots STL files are open-source. You can build your own PAROL6 robot by following instructions on this page.
 
-# Check the arm in action! 
-[![Check the arm in action !](https://user-images.githubusercontent.com/30388414/86797452-f86cbc80-c06f-11ea-962e-c3f80d14b41b.png)](https://www.youtube.com/watch?v=ye37Mpj5qCQ)
-
-# How to start
+# How to start building?
 
 To build this robotic arm follow [Building instructions](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Assembly%20instructions%203.1.pdf). All general info about robotic arm is in [DOCS](https://faze4-robotic-arm-docs.readthedocs.io/en/latest/). Building instructions and DOCS go hand in hand and you need to follow both to build this arm. Building instructions are about general mechanical assembly while DOCS contain ALL info ( Electrical wiring, Low level setup, High level ROS and Matlab, tips ...).
 
-# Repo contents:
+# Repository contents:
 
 - [Low level code]() coming soon
 - [High level code (ROS and Matlab)]() coming soon
