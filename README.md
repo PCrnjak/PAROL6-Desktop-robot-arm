@@ -29,7 +29,7 @@ To build this robotic arm follow [Building instructions](https://github.com/PCrn
 
 # Support the project
 
-All the code and STL files needed to build the robot are Open source and free to all and I would like to keep it that way, so any help 
+All the code and STL files needed to build the robot are Open source and free to all and I would like to keep it that way. Any help 
 in terms of donations, advice, or contribution is really appreciated. Thank you!
 
 
