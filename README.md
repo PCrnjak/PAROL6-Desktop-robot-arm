@@ -11,20 +11,17 @@ PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach
 
 To build this robotic arm follow [Building instructions](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Assembly%20instructions%203.1.pdf). All general info about the robotic arm is in [DOCS](https://faze4-robotic-arm-docs.readthedocs.io/en/latest/). Building instructions and DOCS go hand in hand and you need to follow both to build and use this arm. Building instructions are about general mechanical assembly while DOCS contain ALL info ( Electrical wiring, Low-level setup, High-level ROS and Matlab, tips ...).
 
-# Repository contents:
+# Documentation:
 
-- [Low-level code]() coming soon
-- [High-level code (ROS and Matlab)]() coming soon
 - [Building instructions](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Assembly%20instructions%203.1.pdf)
 - [BOM](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Bom_1.2_joint2_update.xlsx) 
-- [DOCS](https://faze4-robotic-arm-docs.readthedocs.io/en/latest/) Contains ALL info about the arm.
-- [URDF files](https://github.com/PCrnjak/Faze4-Robotic-arm/tree/master/URDF_FAZE4) 
+- [DOCS](https://source-robotics.github.io/PAROL-docs/) 
 
 # More about PAROL6
 - [Youtube](https://www.youtube.com/channel/UCp3sDRwVkbm7b2M-2qwf5aQ)
 - [Hackaday](https://hackaday.io/project/167247-faze4-robotic-arm)
 - [Instagram](https://www.instagram.com/5arcrnjak/)
-- [DOCS]()
+- [DOCS](https://source-robotics.github.io/PAROL-docs/)
 
 
 # Support the project
