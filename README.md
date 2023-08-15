@@ -14,7 +14,7 @@ To build this robotic arm follow [Building instructions](https://github.com/PCrn
 # Documentation:
 
 - [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/Building%20instructions.pdf)
-- [BOM][(https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/PAROL%20BOM.pdf)
+- [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/PAROL%20BOM.pdf)
 - [DOCS]([https://source-robotics.github.io/PAROL-docs/](https://pcrnjak.github.io/PAROL-docs/)) 
 
 # More about PAROL6
