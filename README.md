@@ -15,7 +15,7 @@ To build this robotic arm follow [Building instructions](https://github.com/PCrn
 
 - [Building instructions](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Assembly%20instructions%203.1.pdf)
 - [BOM](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Bom_1.2_joint2_update.xlsx) 
-- [DOCS](https://source-robotics.github.io/PAROL-docs/) 
+- [DOCS]([https://source-robotics.github.io/PAROL-docs/](https://pcrnjak.github.io/PAROL-docs/)) 
 
 # More about PAROL6
 - [Youtube](https://www.youtube.com/channel/UCp3sDRwVkbm7b2M-2qwf5aQ)
