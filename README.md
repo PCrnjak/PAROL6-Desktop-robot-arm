@@ -13,8 +13,8 @@ To build this robotic arm follow [Building instructions](https://github.com/PCrn
 
 # Documentation:
 
-- [Building instructions](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Assembly%20instructions%203.1.pdf)
-- [BOM](https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Bom_1.2_joint2_update.xlsx) 
+- [Building instructions]([https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Assembly%20instructions%203.1.pdf](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/Building%20instructions.pdf))
+- [BOM][(https://github.com/PCrnjak/Faze4-Robotic-arm/blob/master/Bom_1.2_joint2_update.xlsx](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/PAROL%20BOM.pdf)
 - [DOCS]([https://source-robotics.github.io/PAROL-docs/](https://pcrnjak.github.io/PAROL-docs/)) 
 
 # More about PAROL6
