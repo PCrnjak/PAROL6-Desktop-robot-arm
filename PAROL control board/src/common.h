@@ -1,7 +1,7 @@
 /** @file common.h
     @brief A Documented file.
     
-    Here declare existance of global variables
+    Here declare existence of global variables
     Define them in main.cpp --> ex volatile unsignet tick_1ms
     For schematic please refer to:
     For additional pin functionality refer to:
