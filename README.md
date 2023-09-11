@@ -20,7 +20,7 @@ PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach
 
 # More about PAROL6
 - [Youtube](https://www.youtube.com/channel/UCp3sDRwVkbm7b2M-2qwf5aQ)
-- [Hackaday](https://hackaday.io/project/167247-faze4-robotic-arm)
+- [Hackaday](https://hackaday.io/project/191860-parol6-desktop-robotic-arm)
 - [Instagram](https://www.instagram.com/5arcrnjak/)
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 
