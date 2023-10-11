@@ -3,6 +3,9 @@
 <img src="Images/img3.png" alt="drawing" width="5000"/>
 
 
+**If you are interested in beta batch of PAROL6 PCB? Fill this form and get contacted when available: https://forms.gle/sZqHVLPoMJxuVAyJ9**
+
+
 **If you are interested in this robotic arm fill out this form: https://forms.gle/XkSvStwnQxw1f8xL8**
 
 Join [Discord](https://discord.com/invite/prjUvjmGpZ ) community!
