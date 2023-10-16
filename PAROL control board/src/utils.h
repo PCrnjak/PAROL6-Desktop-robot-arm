@@ -33,6 +33,6 @@ int bytes_to_int(uint8_t *bytes);
 int two_bytes_to_int(uint8_t *bytes);
 unsigned char bitsToByte(const bool *bits);
 void byteToBits(byte b, bool* bits);
-
+void byteToBitsBigEndian(byte b, bool* bits);
 
 #endif

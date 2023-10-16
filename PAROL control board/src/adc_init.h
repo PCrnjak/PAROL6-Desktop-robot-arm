@@ -37,6 +37,7 @@ int ADC_CHANNEL_8_READ_BUS_VOLTAGE(void);
 
 void HAL_ADC_MspInit_(ADC_HandleTypeDef* adcHandle);
 
+int BUS_voltage(void);
 
 #ifdef __cplusplus
 }

@@ -1,15 +1,14 @@
 /** @file main.cpp
     @brief A Documented file.
-    
+
     Main file of PAROL6 mainboard firmware.
     Author: Petar Crnjak
-    license: 
-    Date: 16.7.2023
-    GUI compatible version: 
-    Robot compatible version: 
+    license:
+    Date:
+    GUI compatible version:
+    Robot compatible version:
 
 */
-
 
 #include <TMCStepper.h>
 #include <Arduino.h>
@@ -26,7 +25,7 @@
 
 // HardwareSerial Serial2(USART2); // compiles
 #define Serial SerialUSB
-#define DEBUG 0 // For stepper drivers debug
+#define DEBUG 0      // For stepper drivers debug
 #define DEBUG_COMS 0 // comms debug
 
 volatile unsigned tick_count;
@@ -91,6 +90,40 @@ uint8_t end_bytes[] = {0x01, 0x02};
 TIM_TypeDef *Instance = TIM2;
 HardwareTimer *MyTim = new HardwareTimer(Instance);
 
+// Home commands
+int run_once = 0;
+int joint123_stage1 = 0;
+int joint123_stage2 = 0;
+int joint123_stage3 = 0;
+int joint123_done = 0;
+
+int J4_stage2 = 0;
+int J4_stage3 = 0;
+int J4_stage4 = 0;
+int J4_done = 0;
+
+int J6_stage2 = 0;
+int J6_stage3 = 0;
+int J6_stage4 = 0;
+int J6_done = 0;
+
+int J5_stage2 = 0;
+int J5_stage3 = 0;
+int J5_stage4 = 0;
+int J5_done = 0;
+
+int joint456_stage1 = 0;
+int joint456_stage2 = 0;
+int joint456_stage3 = 0;
+
+/// demo stage test
+int setup_var = 0;
+int move1 = 0;
+int move2 = 0;
+int move3 = 0;
+int move4 = 0;
+int start_stop = 0;
+
 /// @brief Called when timer for mesuring time between commands overflows, does nothing
 /// @param
 void Update_IT_callback(void)
@@ -101,6 +134,7 @@ void Unpack_data(uint8_t *data_buffer);
 void Pack_data();
 void Pack_data_TEST();
 void Get_data();
+void reset_homing();
 
 void setup()
 {
@@ -138,6 +172,7 @@ void setup()
   SPI.setSCLK(SCK);
   SPI.setClockDivider(SPI_CLOCK_DIV4); // High speed (180 / 4 = 45 MHz SPI_1 speed)
   SPI.begin();
+  // NOTE this delay is needed for normal operation of Power_switch_managment
   delay(200);
 
   /// Init ADC
@@ -161,23 +196,23 @@ void setup()
 
   stepper[0].setMaxSpeed(50000);
   stepper[0].setAcceleration(1000);
-  stepper[0].setSpeed(-1050);
+  stepper[0].setSpeed(0);
 
   stepper[1].setMaxSpeed(50000);
   stepper[1].setAcceleration(1000);
-  stepper[1].setSpeed(-1050);
+  stepper[1].setSpeed(0);
 
   stepper[2].setMaxSpeed(50000);
   stepper[2].setAcceleration(500);
-  stepper[2].setSpeed(-1050);
+  stepper[2].setSpeed(0);
 
   stepper[3].setMaxSpeed(50000);
   stepper[3].setAcceleration(500);
-  stepper[3].setSpeed(-1050);
+  stepper[3].setSpeed(0);
 
   stepper[4].setMaxSpeed(50000);
   stepper[4].setAcceleration(500);
-  stepper[4].setSpeed(-1050);
+  stepper[4].setSpeed(0);
 
   /// Freq is 90Mhz, with 128 prescale we get 703125, timer is 16bit
   /// It counts to 65535. 1 Tick is then equal to 1/703125 = 1.422222e-6
@@ -191,6 +226,16 @@ void setup()
 void loop()
 {
 
+  /*
+  int state1 = digitalRead(INPUT1);
+  int state2 = digitalRead(INPUT2);
+  Serial.println("inputs 1 is:");
+  Serial.println(state1);
+  Serial.println("inputs 2 is:");
+  Serial.println(state2);
+  delay(2000);
+  */
+
   Power_switch_managment();
   static uint32_t last_time = 0;
   int ms = HAL_GetTick();
@@ -199,65 +244,199 @@ void loop()
   {
     last_time = ms;
   }
-  /*
-  if (homed == 0)
+
+
+
+  /// Robot repetability
+
+  if (PAROL6.command == 69)
   {
-    home_all();
+    if (setup_var == 0)
+    {
+      setup_var = 1;
+
+      stepper[0].setMaxSpeed(6000);
+      stepper[0].setAcceleration(6000);
+      stepper[0].moveTo(6179);
+
+      stepper[1].setMaxSpeed(4000);
+      stepper[1].setAcceleration(4000);
+      stepper[1].moveTo(-22222);
+
+      stepper[2].setMaxSpeed(3500);
+      stepper[2].setAcceleration(3500);
+      stepper[2].moveTo(49812);
+
+      stepper[3].setMaxSpeed(3500);
+      stepper[3].setAcceleration(3500);
+      stepper[3].moveTo(0);
+
+      stepper[4].setMaxSpeed(3500);
+      stepper[4].setAcceleration(3500);
+      stepper[4].moveTo(4059);
+
+      stepper[5].setMaxSpeed(7500);
+      stepper[5].setAcceleration(7500);
+      stepper[5].moveTo(46075);
+
+      /// init accels
+      move1 = 1;
+    }
+
+    if (move1 == 1)
+    {
+
+      for (int i = 0; i < 6; i++)
+      {
+        stepper[i].run();
+      }
+
+      if (stepper[0].isRunning() || stepper[1].isRunning() || stepper[2].isRunning() || stepper[3].isRunning() || stepper[4].isRunning() || stepper[5].isRunning())
+      {
+        move1 = 1;
+      }
+      else
+      {
+        move1 = 0;
+        move2 = 1;
+        stepper[0].moveTo(10240);
+        stepper[1].moveTo(-32000);
+        stepper[2].moveTo(57905);
+        stepper[3].moveTo(0);
+        stepper[4].moveTo(0);
+        stepper[5].moveTo(32000);
+        delay(2000);
+      }
+    }
+
+    if (move2 == 1)
+    {
+
+      for (int i = 0; i < 6; i++)
+      {
+        stepper[i].run();
+      }
+
+      if (stepper[0].isRunning() || stepper[1].isRunning() || stepper[2].isRunning() || stepper[3].isRunning() || stepper[4].isRunning() || stepper[5].isRunning())
+      {
+        move2 = 1;
+      }
+      else
+      {
+        move2 = 0;
+        setup_var = 1;
+      }
+    }
   }
-  */
-  
-  /// Home robot
-  if (PAROL6.command == 100)
+
+  // Dummy command
+  if (PAROL6.command == 255)
   {
-    home_command = 1;
-    homed = 0;
-    if (homed == 0)
+    setup_var = 0;
+    move1 = 0;
+    move2 = 0;
+    if (home_command == 0)
     {
-      home_all();
-    }
-    else
-    {
-      home_command = 0;
-    }
-  }
-  else if (PAROL6.command == 255 && home_command == 1)
-  {
-    if (homed == 0)
-    {
-      home_all();
-    }
-    else
-    {
-      home_command = 0;
+      for (int i = 0; i < 6; i++)
+      {
+        stepper[i].setSpeed(Joint[i].commanded_velocity);
+        //  provjera da li smo na većim pozicijama, ako da baci error
+      }
     }
   }
 
   /// Enable robot
-  if (PAROL6.command == 101){
+  if (PAROL6.command == 101)
+  {
+    reset_homing();
     home_command = 0;
-    // Turn on drivers
-
+    PAROL6.disabled = 0;
   }
 
-    /// Disable robot
-  if (PAROL6.command == 102){
-      home_command = 0;
-      /// Turn off drivers
+  /// Disable robot
+  if (PAROL6.command == 102)
+  {
+    home_command = 0;
+    PAROL6.disabled = 1;
   }
 
   /// Clear error
-  if (PAROL6.command == 102){
-      home_command = 0; 
+  if (PAROL6.command == 103)
+  {
+    home_command = 0;
+    reset_homing();
   }
 
-  /// JOG
-  if (PAROL6.command == 123){
-    /// Pročitaj koji je od joint speeds nije nula i miči taj joint tom brzinom
-  }
+  // If robot is disabled, disable all move commands
+  if (PAROL6.disabled == 0)
+  {
+    /// Home robot
+    if (PAROL6.command == 100)
+    {
+      home_command = 1;
+      homed = 0;
+      if (homed == 0)
+      {
+        home_all();
+      }
+      else
+      {
+        home_command = 0;
+      }
+    }
+    else if (PAROL6.command == 255 && home_command == 1)
+    {
+      if (homed == 0)
+      {
+        home_all();
+      }
+      else
+      {
+        home_command = 0;
+      }
+    }
 
+    /// JOG
+    if (PAROL6.command == 123)
+    {
+      home_command = 0;
+      homed = 1;
+      for (int i = 0; i < 6; i++)
+      {
+        stepper[i].setSpeed(Joint[i].commanded_velocity);
+        stepper[i].runSpeed();
+      }
+      // Joint[i].speed = Joint[i].commanded_velocity;
+      //  provjera da li smo na većim pozicijama, ako da baci error
 
+      /// Pročitaj koji je od joint speeds nije nula i miči taj joint tom brzinom
+      // If (current position != commanded) // ovo vrijedi za one position command tip naredbe
+      // Set speed
+      // Run speed
+      // Dummy data sets sppeds to zero
+    }
+
+    /// GO 2 POSITION
+    /// Input is needed position and speed
+    if (PAROL6.command == 156)
+    {
+      home_command = 0;
+      homed = 1;
+
+        for (int i = 0; i < 6; i++){
   
+          int speed_set = int(((Joint[i].commanded_position - Joint[i].position) / 0.01));
+          speed_set = int(((Joint[i].commanded_velocity + speed_set ) / 2));
+          stepper[i].setSpeed(speed_set);
+          stepper[i].runSpeed();
+  }
 
+
+    }
+  }
+
+  /***************************************************/
+  /***************************************************/
   /// Here check robot position and speed and save to struct
   for (int i = 0; i < 6; i++)
   {
@@ -265,6 +444,9 @@ void loop()
     Joint[i].speed = stepper[i].speed();
     // provjera da li smo na većim pozicijama, ako da baci error
   }
+  /***************************************************/
+  /***************************************************/
+
   Get_data();
 }
 
@@ -328,15 +510,39 @@ void Get_data()
         if (data_buffer[data_len - 2] == end_cond1_byte && data_buffer[data_len - 1] == end_cond2_byte)
         {
 
-
+          // Serial.println(data_buffer[data_len-2]); // 1
+          // Serial.println(data_buffer[data_len-1]); // 1
+          //  Serial.println(data_buffer[data_len]); // 0
+          // Serial.println("ROBOT GOOD END CONDITION ");
           current_tick = MyTim->getCount();
           PAROL6.time_between_commands = current_tick - prev_tick;
           prev_tick = current_tick;
           // Serial.println("ROBOT DATA UNPACK ");
           Unpack_data(data_buffer);
           // Serial.println("ROBOT DATA PACK");
-          Pack_data();
 
+          // Read estop and inputs and write outputs
+
+          PAROL6.In1 = digitalRead(INPUT1);
+          PAROL6.In2 = digitalRead(INPUT2);
+          PAROL6.Estop = digitalRead(ESTOP);
+          digitalWrite(OUTPUT1, PAROL6.commanded_OUT1);
+          digitalWrite(OUTPUT2, PAROL6.commanded_OUT2);
+          PAROL6.Out1 = PAROL6.commanded_OUT1;
+          PAROL6.Out2 = PAROL6.commanded_OUT2;
+
+          Pack_data();
+          // digitalWrite(DIR6,HIGH);
+          // digitalWrite(DIR6,LOW);
+          //   ako su dobri izračunaj crc
+          //   if crc dobar raspakiraj podatke
+          //   ako je dobar paket je dobar i spremi ga u nove variable!
+          //  Pošalji nove podatke od robota
+        }
+
+        // Serial.println("podaci u data bufferu su: ");
+        // for (int i = 0; i < data_len; i++)
+        // Serial.println(data_buffer[i]);
 
         good_start = 0;
         start_cond1 = 0;
@@ -406,7 +612,7 @@ void Unpack_data(uint8_t *data_buffer)
   // Serial.println(Affected_joint);
   InOut = data_buffer[38];
   bool bitArray[8];
-  byteToBits(InOut, bitArray);
+  byteToBitsBigEndian(InOut, bitArray);
   PAROL6.commanded_OUT1 = bitArray[2];
   PAROL6.commanded_OUT2 = bitArray[3];
   // Serial.println(InOut);
@@ -450,7 +656,7 @@ void Unpack_data(uint8_t *data_buffer)
   }
   for (i = 0, j = 0; i < 18; i += 3, j++)
   {
-    Serial.println( Speed[j]);
+    Serial.println(Speed[j]);
   }
   Serial.println(Command);
   Serial.println(Affected_joint);
@@ -465,8 +671,6 @@ void Unpack_data(uint8_t *data_buffer)
   Serial.println(CRC_byte);
 
 #endif
-
-
 }
 
 /// @brief  Pack data packet that we will send to the PC
@@ -581,7 +785,7 @@ void Pack_data()
   uint8_t start_bytes[] = {0xff, 0xff, 0xff}; // 3
   int len = 56;
   int Position_out[] = {Joint[0].position, Joint[1].position, Joint[2].position, Joint[3].position, Joint[4].position, Joint[5].position};                                                            // 18
-  int Speed_out[] = {Joint[0].speed, Joint[1].speed, Joint[2].speed, Joint[3].speed, Joint[5].speed, Joint[6].speed};                                                                                 // 18
+  int Speed_out[] = {Joint[0].speed, Joint[1].speed, Joint[2].speed, Joint[3].speed, Joint[4].speed, Joint[5].speed};                                                                                 // 18
   bool Homed[] = {Joint[0].homed, Joint[1].homed, Joint[2].homed, Joint[3].homed, Joint[4].homed, Joint[5].homed, 1, 1};                                                                              // 1
   bool IO_var[] = {PAROL6.In1, PAROL6.In2, PAROL6.Out1, PAROL6.Out2, PAROL6.Estop, 1, 1, 1};                                                                                                          // 1
   bool temp_error[] = {Joint[0].temperature_error, Joint[1].temperature_error, Joint[2].temperature_error, Joint[3].temperature_error, Joint[4].temperature_error, Joint[5].temperature_error, 1, 1}; // 1
@@ -589,15 +793,15 @@ void Pack_data()
   unsigned int timing_data = PAROL6.time_between_commands;                                                                                                                                            // 2 byte
   int timeout_error = PAROL6.timeout_error;                                                                                                                                                           // 1
   int xtr2 = PAROL6.command;
-  //int xtr2 = PAROL6.xtr2_byte;                                                                                                                                                                        // 1
-  int gripper_ID = Comp_gripper.Gripper_ID;                                                                                                                                                           // 1
-  int gripper_position = Comp_gripper.current_position;                                                                                                                                               // 2 byte
-  int gripper_speed = Comp_gripper.current_speed;                                                                                                                                                     // 2 byte
-  int gripper_current = Comp_gripper.current_current;                                                                                                                                                 // 2 byte
-  int gripper_status = Comp_gripper.current_status;                                                                                                                                                   // 1
-  int object_detection = Comp_gripper.object_detection;                                                                                                                                               // 1
-  int CRC_byte = PAROL6.CRC_value;                                                                                                                                                                    // 1
-  uint8_t end_bytes[] = {0x01, 0x02};                                                                                                                                                                 // 2
+  // int xtr2 = PAROL6.xtr2_byte;                                                                                                                                                                        // 1
+  int gripper_ID = Comp_gripper.Gripper_ID;             // 1
+  int gripper_position = Comp_gripper.current_position; // 2 byte
+  int gripper_speed = Comp_gripper.current_speed;       // 2 byte
+  int gripper_current = Comp_gripper.current_current;   // 2 byte
+  int gripper_status = Comp_gripper.current_status;     // 1
+  int object_detection = Comp_gripper.object_detection; // 1
+  int CRC_byte = PAROL6.CRC_value;                      // 1
+  uint8_t end_bytes[] = {0x01, 0x02};                   // 2
 
   byte data_buffer_send[3];
 
@@ -679,35 +883,63 @@ void Pack_data()
   Serial.write(end_bytes[1]);
 }
 
+void reset_homing()
+{
+  run_once = 0;
+  joint123_stage1 = 0;
+  joint123_stage2 = 0;
+  joint123_stage3 = 0;
+  joint123_done = 0;
+
+  J4_stage2 = 0;
+  J4_stage3 = 0;
+  J4_stage4 = 0;
+  J4_done = 0;
+
+  J6_stage2 = 0;
+  J6_stage3 = 0;
+  J6_stage4 = 0;
+  J6_done = 0;
+
+  J5_stage2 = 0;
+  J5_stage3 = 0;
+  J5_stage4 = 0;
+  J5_done = 0;
+
+  joint456_stage1 = 0;
+  joint456_stage2 = 0;
+  joint456_stage3 = 0;
+}
 /// @brief  Homes whole robot using specific sequence
 /// @return If the robot is homed or not
 int home_all()
 {
+  /*
+    static int run_once = 0;
+    static int joint123_stage1 = 0;
+    static int joint123_stage2 = 0;
+    static int joint123_stage3 = 0;
+    static int joint123_done = 0;
 
-  static int run_once = 0;
-  static int joint123_stage1 = 0;
-  static int joint123_stage2 = 0;
-  static int joint123_stage3 = 0;
-  static int joint123_done = 0;
+    static int J4_stage2 = 0;
+    static int J4_stage3 = 0;
+    static int J4_stage4 = 0;
+    static int J4_done = 0;
 
-  static int J4_stage2 = 0;
-  static int J4_stage3 = 0;
-  static int J4_stage4 = 0;
-  static int J4_done = 0;
+    static int J6_stage2 = 0;
+    static int J6_stage3 = 0;
+    static int J6_stage4 = 0;
+    static int J6_done = 0;
 
-  static int J6_stage2 = 0;
-  static int J6_stage3 = 0;
-  static int J6_stage4 = 0;
-  static int J6_done = 0;
+    static int J5_stage2 = 0;
+    static int J5_stage3 = 0;
+    static int J5_stage4 = 0;
+    static int J5_done = 0;
 
-  static int J5_stage2 = 0;
-  static int J5_stage3 = 0;
-  static int J5_stage4 = 0;
-  static int J5_done = 0;
-
-  static int joint456_stage1 = 0;
-  static int joint456_stage2 = 0;
-  static int joint456_stage3 = 0;
+    static int joint456_stage1 = 0;
+    static int joint456_stage2 = 0;
+    static int joint456_stage3 = 0;
+    */
 
   if (homed == 0)
   {
@@ -1034,30 +1266,7 @@ int home_all()
       Joint[i].homing_stage_2 = 0;
     }
 
-    run_once = 0;
-    joint123_stage1 = 0;
-    joint123_stage2 = 0;
-    joint123_stage3 = 0;
-    joint123_done = 0;
-
-    J4_stage2 = 0;
-    J4_stage3 = 0;
-    J4_stage4 = 0;
-    J4_done = 0;
-
-    J6_stage2 = 0;
-    J6_stage3 = 0;
-    J6_stage4 = 0;
-    J6_done = 0;
-
-    J5_stage2 = 0;
-    J5_stage3 = 0;
-    J5_stage4 = 0;
-    J5_done = 0;
-
-    joint456_stage1 = 0;
-    joint456_stage2 = 0;
-    joint456_stage3 = 0;
+    reset_homing();
 
     homed = 1;
   }

@@ -67,7 +67,11 @@ uint32_t us_tick()
  * @param[in] void (*int_callback)()
  */
 
-
+/// primjer kada je upaljen gleda svakih 50 ms da li je nešto stisnuto
+/// ako je onda pogleda da li je prošlo 3 sec i ako je onda zgasi
+/// za power on, čim se stisne tipka u setupu je da holding pin ode high
+/// ako je power button stisnut fet holding je high
+/// ako je stisnut duže fet holding je nula
 void Power_switch_managment()
 {
   static uint32_t previous_milis = 0;
@@ -161,3 +165,11 @@ void byteToBits(byte b, bool* bits) {
   }
 }
 
+/// @brief  Convert byte to array of bits
+/// @param b byte we want to convert
+/// @param bits bits we will get
+void byteToBitsBigEndian(byte b, bool* bits) {
+  for (int i = 7; i >= 0; i--) {
+    bits[i] = (b >> (7 - i)) & 0x01;
+  }
+}

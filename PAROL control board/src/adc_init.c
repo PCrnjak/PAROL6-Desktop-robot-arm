@@ -116,3 +116,29 @@ int ADC_CHANNEL_8_READ_BUS_VOLTAGE(void){
  return AD_RES;
 
 } 
+
+/** 
+ * Calculates voltage of our DC supply voltage.
+ * Returns voltage in mv
+ * Resistors are 110k and 16K
+ * @param[out] v_
+*/
+int BUS_voltage(void){
+
+int R1 = 110000; // 110k ohms
+int R2 = 16000;  // 16k ohms
+
+
+float referenceVoltage = 3.3; // 3.3V
+int adcResolution = 4095;      // 12-bit ADC, so 2^12 - 1
+
+int adcValue  = ADC_CHANNEL_8_READ_BUS_VOLTAGE();
+
+// Calculate the Voltage Divider Ratio
+float voltageDividerRatio = (float)R2 / (R1 + R2); // Cast to float for floating-point division
+
+// Calculate the measured voltage in millivolts
+int measuredVoltage = (int)(adcValue * (referenceVoltage * 1000.0f) / adcResolution / voltageDividerRatio);
+
+return measuredVoltage;
+}
