@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)
 <img src="Images/img3.png" alt="drawing" width="5000"/>
 
-https://source-robotics.com/
+https://source-robotics.com
 
 **If you are interested in beta batch of PAROL6 PCB? Fill this form and get contacted when available: https://forms.gle/sZqHVLPoMJxuVAyJ9**
 
@@ -17,6 +17,7 @@ PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach
 
 
 # Documentation:
+- [Official website](https://source-robotics.com)
 - [Commander software](https://github.com/PCrnjak/PAROL-commander-software)
 - [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions)
 - [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
