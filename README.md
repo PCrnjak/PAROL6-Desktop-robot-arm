@@ -18,8 +18,8 @@ PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach
 
 # Documentation:
 - [Commander software](https://github.com/PCrnjak/PAROL-commander-software)
-- [Building instructions]([https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/Building%20instructions.pdf](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions))
-- [BOM]([https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/PAROL6_BOM_6_9_2023.pdf](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM))
+- [Building instructions]([https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/Building%20instructions.pdf](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions)
+- [BOM]([https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/blob/main/PAROL6_BOM_6_9_2023.pdf](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 
 # More about PAROL6
