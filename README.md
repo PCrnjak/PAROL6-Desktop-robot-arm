@@ -27,15 +27,8 @@ PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach
 - [Hackaday](https://hackaday.io/project/191860-parol6-desktop-robotic-arm)
 - [Instagram](https://www.instagram.com/5arcrnjak/)
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
+- [Twitter]([https://source-robotics.github.io/PAROL-docs/](https://twitter.com/SourceRobotics))
 
-
-# Support the project
-
-All the code and STL files needed to build the robot are Open source and free to all and I would like to keep it that way. Any help 
-in terms of donations, advice, or contributions is really appreciated. Thank you!
-
-
-[<img src="Images/Donate.png" width="200">](http://google.com.au/)
 
 
 # Project is under GPLv3 Licence
