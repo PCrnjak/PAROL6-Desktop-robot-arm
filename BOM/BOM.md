@@ -29,3 +29,16 @@ Steppers and gearboxes in the build are sourced from [StepperOnline](https://www
 | Stepper 1 | 17HS08-1004S (Nema 17 16Ncm, 42x42x20mm) | 1 | [StepperOnline](https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-16ncm-22-6oz-in-1a-3-7v-42x42x20mm-4-wires-17hs08-1004s) |
 | Stepper 2 | 17HS16-2004S1 (Nema 17 45Ncm, 42x42x40mm) | 3 | [StepperOnline](https://www.omc-stepperonline.com/nema-17-bipolar-45ncm-64oz-in-2a-42x42x40mm-4-wires-w-1m-cable-connector-17hs16-2004s1)
 | Stepper 3 | 17HS24-2104S (Nema 17 65Ncm, 42x42x60mm) | 2 | [StepperOnline](https://www.omc-stepperonline.com/nema-17-bipolar-1-8deg-65ncm-92oz-in-2-1a-3-36v-42x42x60mm-4-wires-17hs24-2104s) |
+
+# Belts and pulleys
+
+Belts can be sourced from eBay, AliExpress or for some countries even Amazon. There is no special quality requirement. Make sure to buy the correct width. Pulleys can also be found at eBay, AliExpress or with 3d printer supplies.
+
+Name in building instructions | Type                                  | Quantity
+------------------------------|---------------------------------------|---------
+Joint 1 belt                  | HTD-3M 396, 6 mm width                | 1
+Joint 3 belt                  | HTD-3M 342, 6 mm width                | 1
+Joint 4 belt                  | HTD-3M 201, 6 mm width                | 1
+Joint 5 belt                  | HTD-3M 246, 6 mm width                | 1
+J4 pulley, J5 pulley          | HTD-3M 12 tooth, 5mm bore, 10mm width | 2
+J1 pulley                     | HTD-3M 15 tooth, 5mm bore, 10mm width | 1
