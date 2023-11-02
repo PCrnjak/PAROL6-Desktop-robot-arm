@@ -47,6 +47,6 @@ J1 pulley                     | HTD-3M 15 tooth, 5mm bore, 10mm width | 1
 
 These can also be found as metal flange, ridig shaft copulers, motor guide etc., but most commonly as flange coupling. These can be found on Aliexpress, eBay, Amazon or sometimes with 3d printer supplies.
 
-Name in building instructions | Type                                                | Quantity
-------------------------------|-----------------------------------------------------|---------
+Name in building instructions | Type                                                 | Quantity
+------------------------------|------------------------------------------------------|---------
 Shaft coupler                 | flange coupling with 8 mm shaft hole, M4 screw holes | 3
