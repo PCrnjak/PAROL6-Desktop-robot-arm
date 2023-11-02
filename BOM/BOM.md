@@ -70,3 +70,30 @@ Bearing 2 (J5, J4, J3)        | NSK HR32906J      | 5
 Bearing 3 (J2, J1)            | NSK HR32907J      | 4
 Tension bearing               | 693ZZ (3x8x4)     | 20
 Tension bearing               | 623ZZ (3x10x4)    | 20
+
+## Electronics and pneumatics
+
+Type                                                 | Quantity | Description 
+-----------------------------------------------------|----------|------------
+PAROL control board                                  |        1 | Buy from [source-robotics](https://source-robotics.com/products/parol6-control-board)
+TMC5160 stepper drivers                              |        6 | **(optional!)** Not needed if you buy the board with drivers. Get from AliExpress or 3d printer supplies
+On/Off button 112mm 3-6V                             |        1 | [AliExpress](https://www.aliexpress.com/item/33014419878.html)
+Noctua NF-A4x20 5V Fan                               |        1 | 
+Power connector 1GX16 2PIN (male & female)           |        1 | [AliExpress](https://www.aliexpress.com/item/1005003439372988.html)
+Gripper connector (electric) 1M8 sensor Female 4 pin |        1 | [AliExpress](https://www.aliexpress.com/item/32843757645.html)
+Power supply 24V, 5A                                 |        1 | You can use a lab power supply or [AliExpress](https://www.aliexpress.com/item/32843757645.html)
+Limit switch ZW12-3                                  |        3 | (FIXME? With rollers at the end?)
+Inductive sensor 1: 4mm NPN NO                       |        1 | [AliExpress](https://www.aliexpress.com/item/4000239711284.html)
+Inductive sensor 2: GX-F8A                           |        1 | [AliExpress](https://www.aliexpress.com/item/1005004165939102.html)
+Inductive sensor 3: M5, NPN NO                       |        1 | [AliExpress](https://www.aliexpress.com/item/4000239711284.html)
+Estop 19mm                                           |        1 | 
+Pneumatic connector - robot: 4 mm type PM            |        4 |
+Pneumatic Gripper 1MHZ2-16D                          |        1 |
+Pneumatic gripper connector PC4-M5                   |        2 | 
+Pneumatic tube: 4x2.5mm                              | 5 meters |
+XT30 connector female                                |        1 | Used to deliver power to PAROL6 PCB
+STLink                                               |        1 | Used to program PAROL6 control board
+USB B cable                                          |        1 | Comms to the PC
+
+
+
