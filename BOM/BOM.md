@@ -49,4 +49,4 @@ These can also be found as metal flange, ridig shaft copulers, motor guide etc.,
 
 Name in building instructions | Type                                                | Quantity
 ------------------------------|-----------------------------------------------------|---------
-Shaft coupler                 | flange couping with 8 mm shaft hole, M4 screw holes | 3
+Shaft coupler                 | flange coupling with 8 mm shaft hole, M4 screw holes | 3
