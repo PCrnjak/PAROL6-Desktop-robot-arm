@@ -42,3 +42,11 @@ Joint 4 belt                  | HTD-3M 201, 6 mm width                | 1
 Joint 5 belt                  | HTD-3M 246, 6 mm width                | 1
 J4 pulley, J5 pulley          | HTD-3M 12 tooth, 5mm bore, 10mm width | 2
 J1 pulley                     | HTD-3M 15 tooth, 5mm bore, 10mm width | 1
+
+# Shaft coupler
+
+These can also be found as metal flange, ridig shaft copulers, motor guide etc., but most commonly as flange coupling. These can be found on Aliexpress, eBay, Amazon or sometimes with 3d printer supplies.
+
+Name in building instructions | Type                                                | Quantity
+------------------------------|-----------------------------------------------------|---------
+Shaft coupler                 | flange couping with 8 mm shaft hole, M4 screw holes | 3
