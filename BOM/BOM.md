@@ -77,9 +77,9 @@ Type                                                 | Quantity | Description
 -----------------------------------------------------|----------|------------
 PAROL control board                                  |        1 | Buy from [source-robotics](https://source-robotics.com/products/parol6-control-board)
 TMC5160 stepper drivers                              |        6 | **(optional!)** Not needed if you buy the board with drivers. Get from AliExpress or 3d printer supplies
-On/Off button 112mm 3-6V                             |        1 | [AliExpress](https://www.aliexpress.com/item/33014419878.html)
+On/Off button 12mm 3-6V                              |        1 | [AliExpress](https://www.aliexpress.com/item/33014419878.html)
 Noctua NF-A4x20 5V Fan                               |        1 | 
-Power connector 1GX16 2PIN (male & female)           |        1 | [AliExpress](https://www.aliexpress.com/item/1005003439372988.html)
+Power connector GX16 2PIN (male & female)            |        1 | [AliExpress](https://www.aliexpress.com/item/1005003439372988.html)
 Gripper connector (electric) 1M8 sensor Female 4 pin |        1 | [AliExpress](https://www.aliexpress.com/item/32843757645.html)
 Power supply 24V, 5A                                 |        1 | You can use a lab power supply or [AliExpress](https://www.aliexpress.com/item/32843757645.html)
 Limit switch ZW12-3                                  |        3 | (FIXME? With rollers at the end?)
