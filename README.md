@@ -2,12 +2,9 @@
 [![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)
 <img src="Images/img3.png" alt="drawing" width="5000"/>
 
-https://source-robotics.com
-
 **If you are interested in beta batch of PAROL6 PCB? Fill this form and get contacted when available: https://forms.gle/sZqHVLPoMJxuVAyJ9**
 
-
-**If you are interested in this robotic arm fill out this form: https://forms.gle/XkSvStwnQxw1f8xL8**
+**Sign up and get notified when available: https://source-robotics.com**
 
 Join [Discord](https://discord.com/invite/prjUvjmGpZ ) community!
 
