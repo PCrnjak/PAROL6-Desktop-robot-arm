@@ -34,6 +34,4 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 - [Twitter](https://twitter.com/SourceRobotics)
 
-
-
 # Project is under GPLv3 Licence
