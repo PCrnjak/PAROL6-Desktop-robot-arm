@@ -10,8 +10,15 @@ Join [Discord](https://discord.com/invite/prjUvjmGpZ ) community!
 
 PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach of PAROL6 was to be similar to industrial robots in terms of mechanical design, control software, and usability. Control software, GUI, and robots STL files are open-source. You can build your own PAROL6 robot by following the instructions on this page.
 
-# How to start building?
+# How to build / Where to buy?
 
+You can buy PAROL6 robotic arm on our website: https://source-robotics.com
+
+If you want to Source all the parts yourself and build your own follow these steps:
+
+* Source all the parts from the [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
+* Follow [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions) to assemble your robot
+* Follow [DOCS](https://source-robotics.github.io/PAROL-docs/) to get your robot up and running.
 
 # Documentation:
 - [Official website](https://source-robotics.com)
