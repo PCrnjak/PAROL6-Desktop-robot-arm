@@ -1,0 +1,41 @@
+Test	CS	
+Board	Pin	Size	Vendor		Flash Chip		HWTest	CopySD
+-----	---	----	------		----------		------
+1	4	4M	Atmel		AT25SF041-SSHD-T	FAIL
+1	5	8M	Spansion	S25FL208K0RMFI041	Pass
+1	6	4M	Micron		M25P40-VMW6TGB		FAIL
+1	7	16M	Spansion	S25FL116K0XMFI043	Pass
+
+2	4	64M	Winbond		W25Q64FVSSIG		Pass
+2	5	128M	Winbond		W25Q128FVSIG		Pass
+2	6	64M	Spansion	S25FL164K0XMFI011	Pass
+2	7	16M	Micron		M25P16-VMN6P		FAIL
+
+3	4	256M	Winbond		25Q256FVFG		Pass		shady aliexpress vendor
+3	5	512M	Spansion	S25FL512SAGMFIG11	Pass
+3	6	256M	Spansion	S25FL256SAGMFIR01	Pass
+3	7	1G	Micron		N25Q00AA13GSF40G	Pass
+
+4	4	256M	Macronix	MX25L25635FMI-10G	Pass
+4	7	256M	Macronix	MX25L25735FMI-10G	Pass
+
+5	4	1G	Spansion	S70FL01GSAGMFI011	Pass1/2		CS2 pin short to 3.3V
+5	5	256M	Micron		N25Q256A13ESF40G	Pass
+5	7	256M	Spansion	S70FL256P0XMFI001	Pass
+
+6	4	32M	Microchip	SST26VF032B-104I/SM	FAIL
+6	5	32M	Microchip	SST26VF032BA-104I/SM	FAIL		see issue #36
+6	6	8M	Winbond		W25Q80BV		Pass		shady aliexpress vendor
+
+7	5	1G	Micron		N25Q00AA				Pesky Products / Tindie
+7	6	2G	Micron		MT25QL02GCBB8E12			Pesky Products / Tindie
+
+8	4	2G	Winbond		W25M02GVZEIG
+8	5	1G	Micron		MT29F1G01ABAFDWB-IT:F
+8	6	2G	Micron		MT29F2G01ABAGDWB-IT:G
+8	7	4G	Micron		MT29F4G01ABAGDWB-IT:G
+
+
+For a photo of all these test boards:
+https://forum.pjrc.com/threads/31491-Will-Paul-s-SPIFlash-library-work-with-these
+

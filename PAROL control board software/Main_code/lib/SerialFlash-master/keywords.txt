@@ -1,0 +1,9 @@
+SerialFlash	KEYWORD1
+SerialFlashFile	KEYWORD1
+createWritable	KEYWORD2
+erase	KEYWORD2
+eraseAll	KEYWORD2
+ready	KEYWORD2
+create	KEYWORD2
+createWritable	KEYWORD2
+getAddress	KEYWORD2

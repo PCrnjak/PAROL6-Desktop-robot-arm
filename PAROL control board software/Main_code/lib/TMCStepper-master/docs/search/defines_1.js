@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['get_5freg_1128',['GET_REG',['../_c_o_o_l_c_o_n_f_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;COOLCONF.cpp'],['../_d_r_v___c_o_n_f_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;DRV_CONF.cpp'],['../_d_r_v___s_t_a_t_u_s_8cpp.html#ad2e18131f241a98db03b9256a1258508',1,'GET_REG():&#160;DRV_STATUS.cpp'],['../_d_r_v_c_o_n_f_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;DRVCONF.cpp'],['../_e_n_c_m_o_d_e_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;ENCMODE.cpp'],['../_i_h_o_l_d___i_r_u_n_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;IHOLD_IRUN.cpp'],['../_p_w_m_c_o_n_f_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;PWMCONF.cpp'],['../_r_a_m_p___s_t_a_t_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;RAMP_STAT.cpp'],['../_s_g_c_s_c_o_n_f_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;SGCSCONF.cpp'],['../_s_h_o_r_t___c_o_n_f_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;SHORT_CONF.cpp'],['../_s_m_a_r_t_e_n_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;SMARTEN.cpp'],['../_s_w___m_o_d_e_8cpp.html#a851c499b52890f1c89886e8cf64a4415',1,'GET_REG():&#160;SW_MODE.cpp']]],
+  ['get_5freg0_1129',['GET_REG0',['../_d_r_v_c_t_r_l_8cpp.html#a2543a2e98c05e6772d620d3c538ef0c4',1,'DRVCTRL.cpp']]],
+  ['get_5freg00_1130',['GET_REG00',['../_d_r_v_s_t_a_t_u_s_8cpp.html#a700e9ae9a224385dfd850ca2b7417e69',1,'DRVSTATUS.cpp']]],
+  ['get_5freg01_1131',['GET_REG01',['../_d_r_v_s_t_a_t_u_s_8cpp.html#a2046ed225380d65752e579908d91aa51',1,'DRVSTATUS.cpp']]],
+  ['get_5freg1_1132',['GET_REG1',['../_d_r_v_c_t_r_l_8cpp.html#a2d160d3af75cffb12b479504897a995d',1,'DRVCTRL.cpp']]],
+  ['get_5freg10_1133',['GET_REG10',['../_d_r_v_s_t_a_t_u_s_8cpp.html#a29f9f7ed99e65caeb204ba7cb3655f08',1,'DRVSTATUS.cpp']]],
+  ['get_5freg_5f2660_1134',['GET_REG_2660',['../_c_h_o_p_c_o_n_f_8cpp.html#aa0ca7f498936322233db718888dc1adc',1,'CHOPCONF.cpp']]]
+];

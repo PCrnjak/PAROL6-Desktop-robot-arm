@@ -1,0 +1,12 @@
+<map id="TMCStepper::IHOLD_IRUN" name="TMCStepper::IHOLD_IRUN">
+<area shape="rect" id="node1" title=" " alt="" coords="424,183,601,209"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html#a2d19f2ad93b00b75ffdcdd73275d2f03" title=" " alt="" coords="215,5,376,32"/>
+<area shape="rect" id="node3" href="$class_t_m_c2160_stepper.html#a7ee48b042245ef5b3968b82029d1404c" title=" " alt="" coords="215,56,376,83"/>
+<area shape="rect" id="node5" href="$class_t_m_c2130_stepper.html#ac62d32ad08be0a34b411bdd5a8489246" title=" " alt="" coords="216,107,375,133"/>
+<area shape="rect" id="node6" href="$class_t_m_c2160_stepper.html#ae8035a0cb8151d5227d8528e540e637d" title=" " alt="" coords="216,157,375,184"/>
+<area shape="rect" id="node7" href="$class_t_m_c5130_stepper.html#a55e61f5181d74f26c9d35c54e4436d7a" title=" " alt="" coords="216,208,375,235"/>
+<area shape="rect" id="node8" href="$class_t_m_c5160_stepper.html#a5a12974304588f9d01898d91ba854b87" title=" " alt="" coords="216,259,375,285"/>
+<area shape="rect" id="node9" href="$class_t_m_c2208_stepper.html#a8eb0d71fbfeeb24c9092328c44fab7e5" title=" " alt="" coords="216,309,375,336"/>
+<area shape="rect" id="node10" href="$class_t_m_c2209_stepper.html#a180f4b9a78e526592d946ec12f71982e" title=" " alt="" coords="216,360,375,387"/>
+<area shape="rect" id="node4" href="$class_t_m_c5130_stepper.html#a897212f81817cdaee4536d642badc149" title=" " alt="" coords="5,56,167,83"/>
+</map>

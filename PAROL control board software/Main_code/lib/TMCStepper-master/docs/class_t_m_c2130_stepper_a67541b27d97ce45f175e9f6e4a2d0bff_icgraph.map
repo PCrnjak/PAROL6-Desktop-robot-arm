@@ -1,0 +1,45 @@
+<map id="TMC2130Stepper::CHOPCONF" name="TMC2130Stepper::CHOPCONF">
+<area shape="rect" id="node1" title=" " alt="" coords="681,613,884,640"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html#a2d19f2ad93b00b75ffdcdd73275d2f03" title=" " alt="" coords="227,56,389,83"/>
+<area shape="rect" id="node3" href="$class_t_m_c2160_stepper.html#a7ee48b042245ef5b3968b82029d1404c" title=" " alt="" coords="227,107,389,133"/>
+<area shape="rect" id="node5" href="$class_t_m_c2130_stepper.html#a141275c7de1c4bbbe7fe27bd785716bc" title=" " alt="" coords="464,259,619,285"/>
+<area shape="rect" id="node7" href="$class_t_m_c2130_stepper.html#a4eeb04668c41d5f4b7548b521bb82c8c" title=" " alt="" coords="459,309,624,336"/>
+<area shape="rect" id="node9" href="$class_t_m_c2130_stepper.html#a90753acc1c350c0d130e67a4bd72ab00" title=" " alt="" coords="456,360,627,387"/>
+<area shape="rect" id="node11" href="$class_t_m_c2130_stepper.html#a5929db451598d6a16f8e82b37fbf738f" title=" " alt="" coords="457,411,625,437"/>
+<area shape="rect" id="node13" href="$class_t_m_c5160_stepper.html#aa3acb02febd68ad411114089307f198c" title=" " alt="" coords="455,461,628,488"/>
+<area shape="rect" id="node15" href="$class_t_m_c2130_stepper.html#af9e25628b6e663120fddac28dee776e1" title=" " alt="" coords="462,512,621,539"/>
+<area shape="rect" id="node17" href="$class_t_m_c2130_stepper.html#a60ffa69ee70b01e21871a3e1b79d6d18" title=" " alt="" coords="463,563,619,589"/>
+<area shape="rect" id="node19" href="$class_t_m_c2130_stepper.html#a546ad69c482d0d33621fac89078966e1" title=" " alt="" coords="461,613,622,640"/>
+<area shape="rect" id="node21" href="$class_t_m_c2130_stepper.html#afb12526e87dba10d1f43fc484d962ec1" title=" " alt="" coords="462,664,621,691"/>
+<area shape="rect" id="node23" href="$class_t_m_c2130_stepper.html#ac62d32ad08be0a34b411bdd5a8489246" title=" " alt="" coords="462,715,621,741"/>
+<area shape="rect" id="node24" href="$class_t_m_c2160_stepper.html#ae8035a0cb8151d5227d8528e540e637d" title=" " alt="" coords="462,765,621,792"/>
+<area shape="rect" id="node25" href="$class_t_m_c5130_stepper.html#a55e61f5181d74f26c9d35c54e4436d7a" title=" " alt="" coords="462,816,621,843"/>
+<area shape="rect" id="node26" href="$class_t_m_c5160_stepper.html#a5a12974304588f9d01898d91ba854b87" title=" " alt="" coords="462,867,621,893"/>
+<area shape="rect" id="node27" href="$class_t_m_c2130_stepper.html#a63df142506643ae8794abbedf3a30c1d" title=" " alt="" coords="464,917,619,944"/>
+<area shape="rect" id="node29" href="$class_t_m_c2130_stepper.html#acbef562065541bf9c49efd7757220775" title=" " alt="" coords="462,968,621,995"/>
+<area shape="rect" id="node31" href="$class_t_m_c2130_stepper.html#ae54d816846ca2103976f490c5ab8e887" title=" " alt="" coords="469,56,613,83"/>
+<area shape="rect" id="node33" href="$class_t_m_c2130_stepper.html#ac34bf4add4f669e935f2a91e1b42817c" title=" " alt="" coords="468,208,615,235"/>
+<area shape="rect" id="node36" href="$class_t_m_c5160_stepper.html#a365f4343bff99bedff934f0647cbaa34" title=" " alt="" coords="466,1019,617,1045"/>
+<area shape="rect" id="node38" href="$class_t_m_c2130_stepper.html#a3d1cc1fd7e97ad59f981a70ba1d9f37f" title=" " alt="" coords="449,1069,633,1096"/>
+<area shape="rect" id="node40" href="$class_t_m_c2130_stepper.html#ae7e437dd00948f511047ea6ee9386718" title=" " alt="" coords="457,1120,626,1147"/>
+<area shape="rect" id="node42" href="$class_t_m_c2130_stepper.html#ac3ea3d6f69e5ec03572752e4e25e0392" title=" " alt="" coords="456,1171,627,1197"/>
+<area shape="rect" id="node4" href="$class_t_m_c5130_stepper.html#a897212f81817cdaee4536d642badc149" title=" " alt="" coords="5,107,167,133"/>
+<area shape="rect" id="node6" href="$class_t_m_c2130_stepper.html#a91665a3aa42dd5937a5209a17a788418" title=" " alt="" coords="231,259,385,285"/>
+<area shape="rect" id="node8" href="$class_t_m_c2130_stepper.html#a529ae6827da49fcf4628a992acbcfe02" title=" " alt="" coords="225,309,391,336"/>
+<area shape="rect" id="node10" href="$class_t_m_c2130_stepper.html#aa64ad499ba22a1eb7fcf4d12623f32e4" title=" " alt="" coords="223,360,393,387"/>
+<area shape="rect" id="node12" href="$class_t_m_c2130_stepper.html#afe6b507d32de6e1613ac3939271417c4" title=" " alt="" coords="224,411,392,437"/>
+<area shape="rect" id="node14" href="$class_t_m_c5160_stepper.html#ac255d90aee670ce1f40ed3106f4b37b8" title=" " alt="" coords="221,461,395,488"/>
+<area shape="rect" id="node16" href="$class_t_m_c2130_stepper.html#aeaa2be2894fe02a7d7ff9f8eb3fa85a9" title=" " alt="" coords="229,512,387,539"/>
+<area shape="rect" id="node18" href="$class_t_m_c2130_stepper.html#a9a596f4925dee519f6c3ee8235830e73" title=" " alt="" coords="230,563,386,589"/>
+<area shape="rect" id="node20" href="$class_t_m_c2130_stepper.html#aa14fc2a23f001550d8a0d83083e2cc7c" title=" " alt="" coords="227,613,389,640"/>
+<area shape="rect" id="node22" href="$class_t_m_c2130_stepper.html#a8d812cad146d2b0bf1845a20f18b94f8" title=" " alt="" coords="229,664,387,691"/>
+<area shape="rect" id="node28" href="$class_t_m_c2130_stepper.html#a21e2a3e8384b97f0730e824064cdb35c" title=" " alt="" coords="231,917,385,944"/>
+<area shape="rect" id="node30" href="$class_t_m_c2130_stepper.html#ad1b2c7c9d932e95079dc23fb5f827590" title=" " alt="" coords="229,968,387,995"/>
+<area shape="rect" id="node32" href="$class_t_m_c2130_stepper.html#ac197c45a9104c0099f523f500080a592" title=" " alt="" coords="236,5,380,32"/>
+<area shape="rect" id="node34" href="$class_t_m_c2130_stepper.html#aca7a615bce307a631a6118fd95cc9195" title=" " alt="" coords="215,157,401,184"/>
+<area shape="rect" id="node35" href="$class_t_m_c2130_stepper.html#a5c38cecab1bea081e85481f6ea107d42" title=" " alt="" coords="235,208,381,235"/>
+<area shape="rect" id="node37" href="$class_t_m_c5160_stepper.html#a19fc280a63f1b02a10cbb856ad234042" title=" " alt="" coords="233,1019,383,1045"/>
+<area shape="rect" id="node39" href="$class_t_m_c2130_stepper.html#af74b9a8b6aefa620712c37eb3047d016" title=" " alt="" coords="216,1069,400,1096"/>
+<area shape="rect" id="node41" href="$class_t_m_c2130_stepper.html#a5ccd627d68726c34f0e9b270d1311bf9" title=" " alt="" coords="223,1120,393,1147"/>
+<area shape="rect" id="node43" href="$class_t_m_c2130_stepper.html#a772d9c8a49b16d52735ce63df554f56d" title=" " alt="" coords="223,1171,393,1197"/>
+</map>

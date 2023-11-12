@@ -1,0 +1,9 @@
+<map id="TMC2130Stepper::XDIRECT" name="TMC2130Stepper::XDIRECT">
+<area shape="rect" id="node1" title=" " alt="" coords="220,132,403,159"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html#ac05adb95ef728ef435bf8798adeda888" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node3" href="$class_t_m_c2130_stepper.html#a43481d6754741d995b69a82e83076573" title=" " alt="" coords="5,56,172,83"/>
+<area shape="rect" id="node4" href="$class_t_m_c2130_stepper.html#ac62d32ad08be0a34b411bdd5a8489246" title=" " alt="" coords="9,107,168,133"/>
+<area shape="rect" id="node5" href="$class_t_m_c2160_stepper.html#ae8035a0cb8151d5227d8528e540e637d" title=" " alt="" coords="9,157,168,184"/>
+<area shape="rect" id="node6" href="$class_t_m_c5130_stepper.html#a55e61f5181d74f26c9d35c54e4436d7a" title=" " alt="" coords="9,208,168,235"/>
+<area shape="rect" id="node7" href="$class_t_m_c5160_stepper.html#a5a12974304588f9d01898d91ba854b87" title=" " alt="" coords="9,259,168,285"/>
+</map>

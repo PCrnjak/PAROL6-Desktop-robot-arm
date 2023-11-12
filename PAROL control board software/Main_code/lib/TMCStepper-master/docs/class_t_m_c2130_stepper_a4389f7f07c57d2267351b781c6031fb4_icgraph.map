@@ -1,0 +1,7 @@
+<map id="TMC2130Stepper::VDCMIN" name="TMC2130Stepper::VDCMIN">
+<area shape="rect" id="node1" title=" " alt="" coords="212,81,392,108"/>
+<area shape="rect" id="node2" href="$class_t_m_c2130_stepper.html#ac62d32ad08be0a34b411bdd5a8489246" title=" " alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node3" href="$class_t_m_c2160_stepper.html#ae8035a0cb8151d5227d8528e540e637d" title=" " alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node4" href="$class_t_m_c5130_stepper.html#a55e61f5181d74f26c9d35c54e4436d7a" title=" " alt="" coords="5,107,164,133"/>
+<area shape="rect" id="node5" href="$class_t_m_c5160_stepper.html#a5a12974304588f9d01898d91ba854b87" title=" " alt="" coords="5,157,164,184"/>
+</map>

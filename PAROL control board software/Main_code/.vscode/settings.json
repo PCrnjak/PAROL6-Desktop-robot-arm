@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "unordered_map": "cpp",
+        "initializer_list": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "stepper_run_test,cpp": "cpp",
+        "drivers_test_7_4_2023-cpp": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "stm32f4xx_hal.h": "c",
+        "random": "cpp",
+        "optional": "cpp",
+        "ostream": "cpp",
+        "system_error": "cpp",
+        "functional": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
