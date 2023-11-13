@@ -47,7 +47,7 @@ General features:
   PAROL6 commander software features:
   - Reading GCODE commands
   - Reading inputs
-  - implementing flow control
+  - implementing flow control (IF, ELSE...)
   - Graphical simulator?
   - Saving programs to the Control board Flash
   - Offline execution of the code (from the flash)
