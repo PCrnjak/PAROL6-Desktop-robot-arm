@@ -42,7 +42,8 @@ General features:
   - ROS2 support
   - Moveit example
   - ROBODK postprocessor
-  - TODO -> Stepper driver stages need to go to short or all fets low when power button is pressed 
+  - TODO -> Stepper driver stages need to go to short or all fets low when power button is pressed
+  - Implement Swift simulator - https://github.com/jhavl/swift
 
   PAROL6 commander software features:
   - Reading GCODE commands
