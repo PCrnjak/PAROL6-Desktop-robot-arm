@@ -42,6 +42,7 @@ General features:
   - ROS2 support
   - Moveit example
   - ROBODK postprocessor
+  - TODO -> Stepper driver stages need to go to short or all fets low when power button is pressed 
 
   PAROL6 commander software features:
   - Reading GCODE commands
