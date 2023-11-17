@@ -42,9 +42,9 @@ General features:
   - ROS2 support
   - Moveit example
   - ROBODK postprocessor
-  - TODO -> Stepper driver stages need to go to short or all fets low when power button is pressed
+  - TODO -> Stepper driver stages need to go to short or all fets low when the power button is pressed
   - TODO ->Implement Swift simulator - https://github.com/jhavl/swift
-  - TODO -> Create executable files for windows and linux
+  - TODO -> Create executable files for Windows and Linux
 
   PAROL6 commander software features:
   - Reading GCODE commands
@@ -54,5 +54,9 @@ General features:
   - Saving programs to the Control board Flash
   - Offline execution of the code (from the flash)
   - Blending in trajectory planner
+
+# Liability 
+1. The software and hardware are still in development and may contain bugs, errors, or incomplete features.
+2. Users are encouraged to use this software and hardware responsibly and at their own risk.
 
 # Project is under GPLv3 Licence
