@@ -34,6 +34,8 @@ If you want to Source all the parts yourself and build your own follow these ste
 
 # 📢📢Contributing to the project 📢📢
 Some features are still missing on the software and hardware side of the PAROL6.<br />
+If you want to contribute you can open issues or pull requests in the GitHub repo to implement a feature!
+You can request or say you are working on a feature in the "general" channel of our [Discord](https://discord.com/invite/prjUvjmGpZ )
 If you want to contribute to the project and don't know how you can help in the implementation of some of these features:
 
 General features:
