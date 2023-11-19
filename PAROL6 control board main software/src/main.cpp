@@ -53,8 +53,13 @@ int homed = 0;
 int repet_flag = 0;
 int home_command = 0;
 
+// variables for robot parking
+int robot_parked = 0;
+int parked = 0;
+
 void Init_motor_drivers(int num);
 int home_all();
+int park_robot();
 void Init_motor_direction();
 void disable_motors();
 void enable_motors();
@@ -367,6 +372,14 @@ void loop()
     reset_homing();
   }
 
+  ///  Park robot
+  if (PAROL6.command == 104 && homed == 1)
+  {
+    home_command = 1;
+    parked = 0;
+    park_robot();
+  }
+
   // If robot is disabled, disable all move commands
   if (PAROL6.disabled == 0)
   {
@@ -423,15 +436,13 @@ void loop()
       home_command = 0;
       homed = 1;
 
-        for (int i = 0; i < 6; i++){
+      for (int i = 0; i < 6; i++){
   
-          int speed_set = int(((Joint[i].commanded_position - Joint[i].position) / 0.01));
-          speed_set = int(((Joint[i].commanded_velocity + speed_set ) / 2));
-          stepper[i].setSpeed(speed_set);
-          stepper[i].runSpeed();
-  }
-
-
+        int speed_set = int(((Joint[i].commanded_position - Joint[i].position) / 0.01));
+        speed_set = int(((Joint[i].commanded_velocity + speed_set ) / 2));
+        stepper[i].setSpeed(speed_set);
+        stepper[i].runSpeed();
+      }
     }
   }
 
@@ -1272,6 +1283,15 @@ int home_all()
   }
   return homed;
 }
+
+int park_robot()
+{
+  // add stepper movements for parking
+  
+  parked = 1;
+  return parked;
+}
+
 
 void Init_motor_direction()
 {
