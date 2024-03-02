@@ -1,6 +1,8 @@
 #ifndef CAN_UTILS_H
 #define CAN_UTILS_H
 
+#define DEBUG 0
+
 /* Symbolic names for bit rate of CAN message                                */
 typedef enum {CAN_50KBPS, CAN_100KBPS, CAN_125KBPS, CAN_250KBPS, CAN_500KBPS, CAN_1000KBPS} BITRATE;
 
@@ -45,9 +47,7 @@ int16_t ComputeCANTimings(const uint32_t peripheral_clock_rate,
                           CAN_bit_timing_config_t* const out_timings);
 
 
-void printRegister(const char * buf, uint32_t reg);
-
-void CANSetGpio(GPIO_TypeDef * addr, uint8_t index, uint8_t speed = 3);
+void CANSetGpio(GPIO_TypeDef * addr, uint8_t index, uint8_t speed);
 
 void CANSetFilter(uint8_t index, uint8_t scale, uint8_t mode, uint8_t fifo, uint32_t bank1, uint32_t bank2);
 

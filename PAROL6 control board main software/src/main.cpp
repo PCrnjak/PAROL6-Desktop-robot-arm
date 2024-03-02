@@ -22,6 +22,8 @@
 #include "adc_init.h"
 #include "stm32f4xx_hal.h"
 #include "motor_init.h"
+#include "CAN.h"
+#include "coms_CAN.h"
 
 // HardwareSerial Serial2(USART2); // compiles
 #define Serial SerialUSB
@@ -41,7 +43,7 @@ AccelStepper stepper[] = {AccelStepper(stepper[0].DRIVER, PUL1, DIR1), AccelStep
 
 struct MotorStruct Joint[NUMBER_OF_JOINTS];
 struct Robot PAROL6;
-struct Gripper Comp_gripper;
+// struct Gripper Comp_gripper;
 
 // variable for mesuring elapsed time between 2 received commands
 int current_tick = 0;
@@ -135,6 +137,7 @@ void Pack_data();
 void Pack_data_TEST();
 void Get_data();
 void reset_homing();
+void Handle_gripper();
 
 void setup()
 {
@@ -221,6 +224,7 @@ void setup()
   MyTim->attachInterrupt(Update_IT_callback);
   MyTim->resume();
   Serial.begin(3000000);
+  Setup_CAN_bus();
 }
 
 void loop()
@@ -244,8 +248,6 @@ void loop()
   {
     last_time = ms;
   }
-
-
 
   /// Robot repetability
 
@@ -423,15 +425,14 @@ void loop()
       home_command = 0;
       homed = 1;
 
-        for (int i = 0; i < 6; i++){
-  
-          int speed_set = int(((Joint[i].commanded_position - Joint[i].position) / 0.01));
-          speed_set = int(((Joint[i].commanded_velocity + speed_set ) / 2));
-          stepper[i].setSpeed(speed_set);
-          stepper[i].runSpeed();
-  }
+      for (int i = 0; i < 6; i++)
+      {
 
-
+        int speed_set = int(((Joint[i].commanded_position - Joint[i].position) / 0.01));
+        speed_set = int(((Joint[i].commanded_velocity + speed_set) / 2));
+        stepper[i].setSpeed(speed_set);
+        stepper[i].runSpeed();
+      }
     }
   }
 
@@ -455,6 +456,10 @@ void loop()
 void Get_data()
 {
 
+  // Get data from CAN gripper
+  CAN_protocol(Serial);
+
+  // Get data from serial
   while (Serial.available() > 0)
   {
 
@@ -531,6 +536,7 @@ void Get_data()
           PAROL6.Out1 = PAROL6.commanded_OUT1;
           PAROL6.Out2 = PAROL6.commanded_OUT2;
 
+          Handle_gripper();
           Pack_data();
           // digitalWrite(DIR6,HIGH);
           // digitalWrite(DIR6,LOW);
@@ -557,6 +563,42 @@ void Get_data()
       }
     }
   }
+}
+
+void Handle_gripper()
+{
+
+  
+    /// Here unpack gripper command data to bits and see what needs to be sent to the gripper
+    bool bitArray[8]; // 0 - activation, 1 - action status, 2 - estop status, 3 - release dir
+  // Comp_gripper.mode; 1 - calibration, 0 - operation mode
+
+  byteToBitsBigEndian(Comp_gripper.command, bitArray);
+
+  if (Comp_gripper.mode == 1)
+  {
+    Send_gripper_cal();
+  }
+  else if (Comp_gripper.mode == 2)
+  {
+    Send_clear_error();
+  }
+  else if (Comp_gripper.prev_commanded_position == Comp_gripper.commanded_position && Comp_gripper.prev_commanded_speed == Comp_gripper.commanded_speed 
+  && Comp_gripper.prev_commanded_current == Comp_gripper.commanded_current && Comp_gripper.prev_command == Comp_gripper.command && Comp_gripper.prev_commanded_ID == Comp_gripper.commanded_ID
+  && Comp_gripper.mode == 0)
+  {
+    Send_gripper_pack_empty();
+  }
+  else
+  {
+    Send_gripper_pack();
+  }
+
+  Comp_gripper.prev_commanded_position = Comp_gripper.commanded_position;
+  Comp_gripper.prev_commanded_speed = Comp_gripper.commanded_speed;
+  Comp_gripper.prev_commanded_current = Comp_gripper.commanded_current;
+  Comp_gripper.prev_command = Comp_gripper.command;
+  Comp_gripper.prev_commanded_ID = Comp_gripper.commanded_ID;
 }
 
 /// @brief  Unpack data packet we got from the PC

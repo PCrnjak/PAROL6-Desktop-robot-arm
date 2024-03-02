@@ -125,6 +125,7 @@ struct MotorStruct
 struct Robot
 {
 
+  int CAN_ID;
   int CRC_value = 212;  
   int command;
   int affected_joint;
@@ -157,21 +158,32 @@ struct Robot
 struct Gripper
 {
   /// @brief data that is being sent from the gripper to the robot
-  int current_position = -100;
-  int current_speed = 2000;
-  int current_current = -3000;
-  int current_status = 123;
-  int object_detection = 69;
-  int Gripper_ID = 255;
+  int current_position = 0;
+  int current_speed = 1;
+  int current_current = 2;
+  int current_status = 1;
+  int object_detection = 1;
+  int Gripper_ID = 0;
 
   /// @brief data that is being sent from the robot to the gripper
-  int commanded_position;
-  int commanded_speed;
-  int commanded_current;
-  int command;
+  int commanded_position = 0;
+  int commanded_speed = 0;
+  int commanded_current = 0;
+  int command = 3;
   int mode;
   int commanded_ID;
+
+  int prev_commanded_position ;
+  int prev_commanded_speed ;
+  int prev_commanded_current ;
+  int prev_command ;
+  int prev_mode;
+  int prev_commanded_ID;
+
+
 };
+
+extern Gripper Comp_gripper;
 
 struct data_send
 {

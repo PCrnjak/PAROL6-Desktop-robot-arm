@@ -3,12 +3,6 @@
 #include "stm32f4xx_hal.h"
 #include "CAN.h"
 
-void printRegister(char * buf, uint32_t reg) {
-  if (DEBUG == 0) return;
-  Serial.print(buf);
-  Serial.print(reg, HEX);
-  Serial.println();
-}
 
 
 /**
@@ -31,39 +25,31 @@ void CANSetGpio(GPIO_TypeDef * addr, uint8_t index, uint8_t speed = 3) {
     }
 
     uint32_t mask;
-    printRegister("GPIO_AFR(b)=", addr->AFR[1]);
+
     mask = 0xF << _index4;
     addr->AFR[ofs]  &= ~mask;         // Reset alternate function
     setting = 0x9;                    // AF9
     mask = setting << _index4;
     addr->AFR[ofs]  |= mask;          // Set alternate function
-    printRegister("GPIO_AFR(a)=", addr->AFR[1]);
 
-    printRegister("GPIO_MODER(b)=", addr->MODER);
     mask = 0x3 << _index2;
     addr->MODER   &= ~mask;           // Reset mode
     setting = 0x2;                    // Alternate function mode
     mask = setting << _index2;
     addr->MODER   |= mask;            // Set mode
-    printRegister("GPIO_MODER(a)=", addr->MODER);
 
-    printRegister("GPIO_OSPEEDR(b)=", addr->OSPEEDR);
     mask = 0x3 << _index2;
     addr->OSPEEDR &= ~mask;           // Reset speed
     setting = speed;
     mask = setting << _index2;
     addr->OSPEEDR |= mask;            // Set speed
-    printRegister("GPIO_OSPEEDR(a)=", addr->OSPEEDR);
 
-    printRegister("GPIO_OTYPER(b)=", addr->OTYPER);
     mask = 0x1 << index;
     addr->OTYPER  &= ~mask;           // Reset Output push-pull
-    printRegister("GPIO_OTYPER(a)=", addr->OTYPER);
-
-    printRegister("GPIO_PUPDR(b)=", addr->PUPDR);
+ 
     mask = 0x3 << _index2;
     addr->PUPDR   &= ~mask;           // Reset port pull-up/pull-down
-    printRegister("GPIO_PUPDR(a)=", addr->PUPDR);
+
 }
 
 /**
@@ -176,11 +162,11 @@ bool CANInit(BITRATE bitrate, int remap)
 
   CAN1->MCR |= 0x1UL;                    // Require CAN1 to Initialization mode 
   while (!(CAN1->MSR & 0x1UL));          // Wait for Initialization mode
-  printRegister("CAN1->MCR=", CAN1->MCR);
+
 
   CAN2->MCR |= 0x1UL;                    // Require CAN2 to Initialization mode
   while (!(CAN2->MSR & 0x1UL));          // Wait for Initialization mode
-  printRegister("CAN2->MCR=", CAN2->MCR);
+
 
   //CAN1->MCR = 0x51UL;                  // Hardware initialization(No automatic retransmission)
   CAN1->MCR = 0x41UL;                    // Hardware initialization(With automatic retransmission)
@@ -192,16 +178,14 @@ bool CANInit(BITRATE bitrate, int remap)
   // Set bit rates 
   CAN1->BTR &= ~(((0x03) << 24) | ((0x07) << 20) | ((0x0F) << 16) | (0x3FF)); 
   CAN1->BTR |=  (((can_configs[bitrate].TS2-1) & 0x07) << 20) | (((can_configs[bitrate].TS1-1) & 0x0F) << 16) | ((can_configs[bitrate].BRP-1) & 0x3FF);
-  printRegister("CAN1->BTR=", CAN1->BTR);
 
   CAN2->BTR &= ~(((0x03) << 24) | ((0x07) << 20) | ((0x0F) << 16) | (0x3FF)); 
   CAN2->BTR |=  (((can_configs[bitrate].TS2-1) & 0x07) << 20) | (((can_configs[bitrate].TS1-1) & 0x0F) << 16) | ((can_configs[bitrate].BRP-1) & 0x3FF);
-  printRegister("CAN2->BTR=", CAN2->BTR);
+
 
   // Configure Filters to default values
   CAN1->FMR |=   0x1UL;                  // Set to filter initialization mode
   CAN1->FMR &= 0xFFFFC0FF;               // Clear CAN2 start bank
-  printRegister("CAN1->FMR=", CAN1->FMR);
 
   // bxCAN has 28 filters.
   // These filters are used for both CAN1 and CAN2.
@@ -240,9 +224,9 @@ bool CANInit(BITRATE bitrate, int remap)
   //Serial.print("can2=");
   //Serial.println(can2);
   if (can2) {
-    Serial.println("CAN2 initialize ok");
+
   } else {
-    Serial.println("CAN2 initialize fail!!");
+
   }
 
   bool can1 = false;
@@ -260,9 +244,8 @@ bool CANInit(BITRATE bitrate, int remap)
   //Serial.print("can1=");
   //Serial.println(can1);
   if (can1) {
-    Serial.println("CAN1 initialize ok");
+
   } else {
-    Serial.println("CAN1 initialize fail!!");
     return false;
   }
   return true;
@@ -387,17 +370,17 @@ void CANSend(uint8_t ch, CAN_msg_t* CAN_tx_msg)
     // Send Go
     CAN1->sTxMailBox[0].TIR = out | STM32_CAN_TIR_TXRQ;
 
-    /**/
+
+    /*
+    
     // Wait until the mailbox is empty
     while(CAN1->sTxMailBox[0].TIR & 0x1UL && count++ < 1000000);
 
     // The mailbox don't becomes empty while loop
     if (CAN1->sTxMailBox[0].TIR & 0x1UL) {
-      Serial.println("Send Fail");
-      Serial.println(CAN1->ESR);
-      Serial.println(CAN1->MSR);
-      Serial.println(CAN1->TSR);
+
     }
+    */
 
 
   } // end CAN1
@@ -419,16 +402,14 @@ void CANSend(uint8_t ch, CAN_msg_t* CAN_tx_msg)
     CAN2->sTxMailBox[0].TIR = out | STM32_CAN_TIR_TXRQ;
 
     
+    /*
     // Wait until the mailbox is empty
     while(CAN2->sTxMailBox[0].TIR & 0x1UL && count++ < 1000000);
 
     // The mailbox don't becomes empty while loop
     if (CAN2->sTxMailBox[0].TIR & 0x1UL) {
-      Serial.println("Send Fail");
-      Serial.println(CAN1->ESR);
-      Serial.println(CAN1->MSR);
-      Serial.println(CAN1->TSR);
     }
+    */
   
   
   } // end CAN2
