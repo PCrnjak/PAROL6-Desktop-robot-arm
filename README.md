@@ -26,6 +26,8 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 
 # More about PAROL6
+- [Forum](https://discourse.source-robotics.com/)
+- [Blog](https://source-robotics.com/blogs/blog)
 - [Youtube](https://www.youtube.com/channel/UCp3sDRwVkbm7b2M-2qwf5aQ)
 - [Hackaday](https://hackaday.io/project/191860-parol6-desktop-robotic-arm)
 - [Instagram](https://www.instagram.com/5arcrnjak/)
