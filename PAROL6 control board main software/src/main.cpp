@@ -527,7 +527,7 @@ void Get_data()
           // Serial.println("ROBOT DATA PACK");
 
           // Read estop and inputs and write outputs
-
+          
           PAROL6.In1 = digitalRead(INPUT1);
           PAROL6.In2 = digitalRead(INPUT2);
           PAROL6.Estop = digitalRead(ESTOP);
