@@ -92,6 +92,9 @@ uint8_t end_bytes[] = {0x01, 0x02};
 TIM_TypeDef *Instance = TIM2;
 HardwareTimer *MyTim = new HardwareTimer(Instance);
 
+// FOR PNEUMATIC GRIPPER 8900
+int j5_homing_offset = 8900 // for SSG48 GRIPPER 8035;
+
 // Home commands
 int run_once = 0;
 int joint123_stage1 = 0;
@@ -995,7 +998,7 @@ int home_all()
         stepper[1].setSpeed(-2550);
         stepper[2].setSpeed(-2550);
         stepper[3].setSpeed(5550);
-        stepper[4].setSpeed(-7050);
+        stepper[4].setSpeed(-5050);
         stepper[5].setSpeed(-9550);
         Joint[0].homed = 0;
         Joint[1].homed = 0;
@@ -1018,7 +1021,7 @@ int home_all()
         {
 
           stepper[4].setAcceleration(5500);
-          stepper[4].moveTo(Joint[4].homed_position);
+          stepper[4].moveTo(j5_homing_offset);
 
           stepper[5].setAcceleration(5500);
           stepper[5].moveTo(0);
