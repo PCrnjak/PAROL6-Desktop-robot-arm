@@ -93,7 +93,7 @@ TIM_TypeDef *Instance = TIM2;
 HardwareTimer *MyTim = new HardwareTimer(Instance);
 
 // FOR PNEUMATIC GRIPPER 8900
-int j5_homing_offset = 8900 // for SSG48 GRIPPER 8035;
+int j5_homing_offset = 8900; // for SSG48 GRIPPER 8035;
 
 // Home commands
 int run_once = 0;
@@ -1028,7 +1028,7 @@ int home_all()
 
           stepper[4].run();
           stepper[5].run();
-          if (stepper[4].currentPosition() == Joint[4].homed_position && stepper[5].currentPosition() == 0)
+          if (stepper[4].currentPosition() == j5_homing_offset && stepper[5].currentPosition() == 0)
           {
             J5_stage4 = 1;
             stepper[4].setSpeed(1050);
