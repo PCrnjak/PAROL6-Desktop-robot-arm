@@ -1,5 +1,6 @@
 # PAROL6-Desktop-robot-arm
-[![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)    ![Issues](https://img.shields.io/github/issues/PCrnjak/PAROL6-Desktop-robot-arm) ![release](https://img.shields.io/github/v/release/PCrnjak/PAROL6-Desktop-robot-arm)
+[![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)    ![Issues](https://img.shields.io/github/issues/PCrnjak/PAROL6-Desktop-robot-arm) ![release](https://img.shields.io/github/v/release/PCrnjak/PAROL6-Desktop-robot-arm) [![Powered by the Robotics Toolbox](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/rtb_powered.min.svg)](https://github.com/petercorke/robotics-toolbox-python)
+
 <img src="Images/img3.png" alt="drawing" width="5000"/>
 
 
