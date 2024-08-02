@@ -35,29 +35,6 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 - [Twitter](https://twitter.com/SourceRobotics)
 
-# 📢📢Contributing to the project 📢📢
-Some features are still missing on the software and hardware side of the PAROL6.<br />
-If you want to contribute you can open issues or pull requests in the GitHub repo to implement a feature! (Use DEV branch) <br />
-You can request or say you are working on a feature in the "general" channel of our [Discord](https://discord.com/invite/prjUvjmGpZ )<br />
-If you want to contribute to the project and don't know how you can help in the implementation of some of these features:
-
-General features:
-  - ROS2 support
-  - Moveit example
-  - ROBODK postprocessor
-  - TODO -> Stepper driver stages need to go to short or all fets low when the power button is pressed
-  - TODO ->Implement Swift simulator - https://github.com/jhavl/swift
-  - TODO -> Create executable files for Windows and Linux
-
-  PAROL6 commander software features:
-  - Reading GCODE commands
-  - Reading inputs
-  - implementing flow control (IF, ELSE...)
-  - Graphical simulator?
-  - Saving programs to the Control board Flash
-  - Offline execution of the code (from the flash)
-  - Blending in trajectory planner
-
 # Liability 
 1. The software and hardware are still in development and may contain bugs, errors, or incomplete features.
 2. Users are encouraged to use this software and hardware responsibly and at their own risk.
