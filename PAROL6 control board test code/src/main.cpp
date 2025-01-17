@@ -270,6 +270,7 @@ void loop()
         digitalWrite(LED2, LED_status);
         Serial.println("Received 'start' command");
       }
+      /*
       else if (strcmp(command, "FLASH") == 0)
       {
 
@@ -297,6 +298,7 @@ void loop()
 
         Serial.println("Received 'end' command");
       }
+      	*/
       else if (strcmp(command, "IO") == 0)
       {
         COMMAND = 1;
