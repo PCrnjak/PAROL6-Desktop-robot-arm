@@ -12,11 +12,11 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "c:/Users/ROPE/Desktop/PAROL6/PAROL6-Desktop-robot-arm/PAROL6 control board test code/.pio/build/genericSTM32F446RE/firmware.elf",
+            "executable": "C:/Users/Petar/Desktop/PAROL6/PAROL6-Desktop-robot-arm/PAROL6 control board test code/.pio/build/genericSTM32F446RE/firmware.elf",
             "projectEnvName": "genericSTM32F446RE",
-            "toolchainBinDir": "C:/Users/ROPE/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "toolchainBinDir": "C:/Users/Petar/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/Users/ROPE/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd",
+            "svdPath": "C:/Users/Petar/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug"
@@ -26,21 +26,21 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "c:/Users/ROPE/Desktop/PAROL6/PAROL6-Desktop-robot-arm/PAROL6 control board test code/.pio/build/genericSTM32F446RE/firmware.elf",
+            "executable": "C:/Users/Petar/Desktop/PAROL6/PAROL6-Desktop-robot-arm/PAROL6 control board test code/.pio/build/genericSTM32F446RE/firmware.elf",
             "projectEnvName": "genericSTM32F446RE",
-            "toolchainBinDir": "C:/Users/ROPE/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "toolchainBinDir": "C:/Users/Petar/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/Users/ROPE/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd"
+            "svdPath": "C:/Users/Petar/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "c:/Users/ROPE/Desktop/PAROL6/PAROL6-Desktop-robot-arm/PAROL6 control board test code/.pio/build/genericSTM32F446RE/firmware.elf",
+            "executable": "C:/Users/Petar/Desktop/PAROL6/PAROL6-Desktop-robot-arm/PAROL6 control board test code/.pio/build/genericSTM32F446RE/firmware.elf",
             "projectEnvName": "genericSTM32F446RE",
-            "toolchainBinDir": "C:/Users/ROPE/.platformio/packages/toolchain-gccarmnoneeabi/bin",
+            "toolchainBinDir": "C:/Users/Petar/.platformio/packages/toolchain-gccarmnoneeabi/bin",
             "internalConsoleOptions": "openOnSessionStart",
-            "svdPath": "C:/Users/ROPE/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd",
+            "svdPath": "C:/Users/Petar/.platformio/platforms/ststm32/misc/svd/STM32F446x.svd",
             "loadMode": "manual"
         }
     ]
