@@ -101,7 +101,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=60117",
+                "PLATFORMIO=60118",
                 "STM32F4",
                 "STM32F446xx",
                 "STM32F4xx",
