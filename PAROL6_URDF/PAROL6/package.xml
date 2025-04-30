@@ -1,21 +1,23 @@
-<package format="2">
-  <name>PAROL6</name>
+<package format="3">
+  <name>parol6</name>
   <version>1.0.0</version>
   <description>
-    <p>URDF Description package for PAROL6</p>
-    <p>This package contains configuration data, 3D models and launch files
-for PAROL6 robot</p>
+    URDF Description package for PAROL6. This package contains configuration data,
+    3D models, and launch files for the PAROL6 robot.
   </description>
-  <author>TODO</author>
-  <maintainer email="TODO@email.com" />
+
+  <maintainer email="TODO@email.com">TODO</maintainer>
   <license>BSD</license>
-  <buildtool_depend>catkin</buildtool_depend>
-  <depend>roslaunch</depend>
-  <depend>robot_state_publisher</depend>
-  <depend>rviz</depend>
-  <depend>joint_state_publisher_gui</depend>
-  <depend>gazebo</depend>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+
   <export>
-    <architecture_independent />
+    <build_type>ament_cmake</build_type>
   </export>
 </package>

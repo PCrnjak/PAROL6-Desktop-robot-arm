@@ -3,7 +3,16 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="PAROL6">
+  name="parol6">
+
+  <link name="world"/>
+  <joint name="base_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin rpy="0 0 0" xyz="0.0 0.0 0.00"/>
+  </joint>
+
+
   <link
     name="base_link">
     <inertial>
@@ -26,7 +35,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/base_link.STL" />
+          filename="package://parol6/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +49,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/base_link.STL" />
+          filename="package://parol6/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +75,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L1.STL" />
+          filename="package://parol6/meshes/L1.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +89,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L1.STL" />
+          filename="package://parol6/meshes/L1.STL" />
       </geometry>
     </collision>
   </link>
@@ -97,10 +106,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-1.7"
+      upper="1.7"
+      effort="300"
+      velocity="3" />
   </joint>
   <link
     name="L2">
@@ -124,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L2.STL" />
+          filename="package://parol6/meshes/L2.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +147,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L2.STL" />
+          filename="package://parol6/meshes/L2.STL" />
       </geometry>
     </collision>
   </link>
@@ -155,10 +164,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-0.98"
+      upper="1"
+      effort="300"
+      velocity="3" />
   </joint>
   <link
     name="L3">
@@ -182,7 +191,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L3.STL" />
+          filename="package://parol6/meshes/L3.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +205,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L3.STL" />
+          filename="package://parol6/meshes/L3.STL" />
       </geometry>
     </collision>
   </link>
@@ -213,10 +222,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-2"
+      upper="1.3"
+      effort="300"
+      velocity="3" />
   </joint>
   <link
     name="L4">
@@ -240,7 +249,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L4.STL" />
+          filename="package://parol6/meshes/L4.STL" />
       </geometry>
       <material
         name="">
@@ -254,7 +263,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L4.STL" />
+          filename="package://parol6/meshes/L4.STL" />
       </geometry>
     </collision>
   </link>
@@ -271,10 +280,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-2"
+      upper="2"
+      effort="300"
+      velocity="3" />
   </joint>
   <link
     name="L5">
@@ -298,7 +307,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L5.STL" />
+          filename="package://parol6/meshes/L5.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +321,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L5.STL" />
+          filename="package://parol6/meshes/L5.STL" />
       </geometry>
     </collision>
   </link>
@@ -329,10 +338,10 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-2.1"
+      upper="2.1"
+      effort="300"
+      velocity="3" />
   </joint>
   <link
     name="L6">
@@ -356,7 +365,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L6.STL" />
+          filename="package://parol6/meshes/L6.STL" />
       </geometry>
       <material
         name="">
@@ -370,7 +379,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://PAROL6/meshes/L6.STL" />
+          filename="package://parol6/meshes/L6.STL" />
       </geometry>
     </collision>
   </link>
@@ -387,9 +396,118 @@
     <axis
       xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="0"
-      effort="0"
-      velocity="0" />
+      lower="-3.1"
+      upper="3.1"
+      effort="300"
+      velocity="3" />
   </joint>
+
+  <transmission name="TRANS_L1"> 
+    <type>transmission_interface/SimpleTransmission</type> 
+    <joint name="L1"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    </joint> 
+    <actuator name="ACT_L1"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    <mechanicalReduction>1</mechanicalReduction> 
+    </actuator> 
+  </transmission> 
+
+  <transmission name="TRANS_L2"> 
+    <type>transmission_interface/SimpleTransmission</type> 
+    <joint name="L2"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    </joint> 
+    <actuator name="ACT_L2"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    <mechanicalReduction>1</mechanicalReduction> 
+    </actuator> 
+  </transmission> 
+
+  <transmission name="TRANS_L3"> 
+    <type>transmission_interface/SimpleTransmission</type> 
+    <joint name="L3"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    </joint> 
+    <actuator name="ACT_L3"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    <mechanicalReduction>1</mechanicalReduction> 
+    </actuator> 
+  </transmission> 
+
+  <transmission name="TRANS_L4"> 
+    <type>transmission_interface/SimpleTransmission</type> 
+    <joint name="L4"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    </joint> 
+    <actuator name="ACT_L4"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    <mechanicalReduction>1</mechanicalReduction> 
+    </actuator> 
+  </transmission> 
+
+  <transmission name="TRANS_L5"> 
+    <type>transmission_interface/SimpleTransmission</type> 
+    <joint name="L5"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    </joint> 
+    <actuator name="ACT_L5"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    <mechanicalReduction>1</mechanicalReduction> 
+    </actuator> 
+  </transmission> 
+
+  <transmission name="TRANS_L6"> 
+    <type>transmission_interface/SimpleTransmission</type> 
+    <joint name="L6"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    </joint> 
+    <actuator name="ACT_L6"> 
+
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface> 
+    <mechanicalReduction>1</mechanicalReduction> 
+    </actuator> 
+  </transmission> 
+
+  <gazebo> 
+    <plugin name="control" filename="libgazebo_ros_control.so"> 
+    <robotNamespace>/</robotNamespace> 
+    </plugin> 
+  </gazebo> 
+
+  <gazebo reference="L1"> 
+    <selfCollide>true</selfCollide> 
+  </gazebo>
+
+  <gazebo reference="L2"> 
+    <selfCollide>true</selfCollide> 
+  </gazebo>
+
+  <gazebo reference="L3"> 
+    <selfCollide>true</selfCollide> 
+  </gazebo>
+
+  <gazebo reference="L4"> 
+    <selfCollide>true</selfCollide> 
+  </gazebo>
+
+  <gazebo reference="L5"> 
+    <selfCollide>true</selfCollide> 
+  </gazebo>
+
+  <gazebo reference="L6"> 
+    <selfCollide>true</selfCollide> 
+  </gazebo>
+
 </robot>
