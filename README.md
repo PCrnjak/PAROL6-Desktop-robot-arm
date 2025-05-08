@@ -25,6 +25,7 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 - [Video tutorials](https://youtube.com/playlist?list=PLSueoDrBt5MMTL9O8qAWZiJrNIf8-29Qz&si=Zca3UZKENje9ifow)
+- [ROS2 / Moveit simulation] (https://github.com/PCrnjak/PAROL6-ROS2-MOVEIT)
 
 # More about PAROL6
 - [Forum](https://discourse.source-robotics.com/)
