@@ -21,6 +21,7 @@ If you want to Source all the parts yourself and build your own follow these ste
 # Documentation:
 - [Official website](https://source-robotics.com)
 - [Commander software](https://github.com/PCrnjak/PAROL-commander-software) ------ [Minimal hardware specs!](https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md)
+- [Python API to control PAROL6 via custom python scripts, terminal or LLMs](https://github.com/PCrnjak/PAROL6-python-API)
 - [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions)
 - [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
