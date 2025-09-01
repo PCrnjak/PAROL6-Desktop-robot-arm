@@ -28,6 +28,9 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [Video tutorials](https://youtube.com/playlist?list=PLSueoDrBt5MMTL9O8qAWZiJrNIf8-29Qz&si=Zca3UZKENje9ifow)
 - [ROS2 / Moveit simulation](https://github.com/PCrnjak/PAROL6-ROS2-MOVEIT)
 
+## Community projects
+- [Commander software refactored for easier editing + vision systems](https://github.com/thousands-star/Parol6_Better_Command)
+
 # More about PAROL6
 - [Forum](https://discourse.source-robotics.com/)
 - [Blog](https://source-robotics.com/blogs/blog)
