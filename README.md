@@ -22,7 +22,6 @@ If you want to Source all the parts yourself and build your own follow these ste
 # Documentation:
 - [Official website](https://source-robotics.com)
 - [Commander software](https://github.com/PCrnjak/PAROL-commander-software) ------ [Minimal hardware specs!](https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md)
-- [WEB commander software](https://github.com/Jepson2k/PAROL-Web-Commander)
 - [Python API](https://github.com/PCrnjak/PAROL6-python-API)
 - [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions)
 - [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
@@ -31,6 +30,7 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [ROS2 / Moveit simulation](https://github.com/PCrnjak/PAROL6-ROS2-MOVEIT)
 
 ## Community projects
+- [WEB commander software](https://github.com/Jepson2k/PAROL-Web-Commander)
 - [Commander software refactored for easier editing + vision systems](https://github.com/thousands-star/Parol6_Better_Command)
 - [PAROL6 Gemini LLM vision control](https://github.com/AlvarEhr/PAROL6-Python-API-Gemini-Vision-Public)
 - [PAROL6 keyframe tool](https://github.com/jacobguldbergdk/parol6-keyframe-poc)
