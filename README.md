@@ -1,5 +1,15 @@
 # PAROL6-Desktop-robot-arm
-[![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)    ![Issues](https://img.shields.io/github/issues/PCrnjak/PAROL6-Desktop-robot-arm) ![release](https://img.shields.io/github/v/release/PCrnjak/PAROL6-Desktop-robot-arm) [![Powered by the Robotics Toolbox](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/rtb_powered.min.svg)](https://github.com/petercorke/robotics-toolbox-python)
+[![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)    ![Issues](https://img.shields.io/github/issues/PCrnjak/PAROL6-Desktop-robot-arm) ![release](https://img.shields.io/github/v/release/PCrnjak/PAROL6-Desktop-robot-arm) [![Powered by the Robotics Toolbox](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/rtb_powered.min.svg)](https://github.com/petercorke/robotics-toolbox-python) 
+
+<p align="left">
+  <a href="https://source-robotics.github.io/PAROL-docs/"><img src="https://img.shields.io/badge/doc-page-orange" alt="Documentation"></a>
+  <a href="http://discord.gg/prjUvjmGpZ"><img src="https://img.shields.io/discord/1072498136284667955?logo=discord&color=blue" alt="Discord"></a>
+  <a href="https://source-robotics.com//"><img src="https://img.shields.io/badge/Shop-shopping-purple?logo=shopify" alt="Shop"></a>
+  <a href="https://www.linkedin.com/company/source-robotics/"><img src="https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin" alt="LinkedIn"></a>
+  <a href="https://x.com/SourceRobotics"><img src="https://img.shields.io/badge/X-Follow-black?logo=x" alt="X"></a>
+  <a href="https://www.youtube.com/@source-robotics"><img src="https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube" alt="YouTube"></a>
+</p>
+
 
 <img src="Images/img3.png" alt="drawing" width="5000"/>
 
@@ -21,7 +31,6 @@ If you want to Source all the parts yourself and build your own follow these ste
 # Documentation:
 - [Official website](https://source-robotics.com)
 - [Commander software](https://github.com/PCrnjak/PAROL-commander-software) ------ [Minimal hardware specs!](https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md)
-- [WEB commander software](https://github.com/Jepson2k/PAROL-Web-Commander)
 - [Python API](https://github.com/PCrnjak/PAROL6-python-API)
 - [Building instructions](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/Building%20instructions)
 - [BOM](https://github.com/PCrnjak/PAROL6-Desktop-robot-arm/tree/main/BOM)
@@ -30,8 +39,11 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [ROS2 / Moveit simulation](https://github.com/PCrnjak/PAROL6-ROS2-MOVEIT)
 
 ## Community projects
+- [WEB commander software](https://github.com/Jepson2k/PAROL-Web-Commander)
 - [Commander software refactored for easier editing + vision systems](https://github.com/thousands-star/Parol6_Better_Command)
 - [PAROL6 Gemini LLM vision control](https://github.com/AlvarEhr/PAROL6-Python-API-Gemini-Vision-Public)
+- [PAROL6 keyframe tool](https://github.com/jacobguldbergdk/parol6-keyframe-poc)
+  
 # More about PAROL6
 - [Forum](https://discourse.source-robotics.com/)
 - [Blog](https://source-robotics.com/blogs/blog)
