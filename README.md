@@ -53,9 +53,17 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 - [Twitter](https://twitter.com/SourceRobotics)
 
-# Liability 
-1. The software and hardware are still in development and may contain bugs, errors, or incomplete features.
-2. Users are encouraged to use this software and hardware responsibly and at their own risk.
+# ⚠️ Safety, Liability & Disclaimer
+
+This project includes experimental software, hardware designs, and assembly documentation that are still under development and may contain bugs, errors, or incomplete features.
+By using, building, or modifying this project, you acknowledge and agree that:
+* You use this project entirely at your own risk
+* You are solely responsible for safe assembly, testing, and operation
+* No guarantee is made regarding correctness, safety, or reliability
+* The authors are not responsible for any damage, injury, or loss resulting from the use or misuse of this project 
+* Hardware performance and safety depend on user assembly, component quality, calibration, and handling, which cannot be guaranteed
+
+This project is provided “as is.” If you choose to build a device yourself using these files, designs, or instructions, you do so without any warranties or guarantees, including regarding safety, reliability, or suitability for any particular purpose.
 
 # Support
 
