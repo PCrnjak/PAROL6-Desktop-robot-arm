@@ -43,6 +43,7 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [Commander software refactored for easier editing + vision systems](https://github.com/thousands-star/Parol6_Better_Command)
 - [PAROL6 Gemini LLM vision control](https://github.com/AlvarEhr/PAROL6-Python-API-Gemini-Vision-Public)
 - [PAROL6 Pilot webgui](https://github.com/jointAxis77/pilot)
+- [Another GUI](https://github.com/jakubgrzebien1234-creator/PAROL6_GUI)
   
 # More about PAROL6
 - [Forum](https://discourse.source-robotics.com/)
