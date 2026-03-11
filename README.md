@@ -25,8 +25,9 @@
   <a href="https://www.youtube.com/@source-robotics"><img src="https://img.shields.io/badge/YouTube-Subscribe-red?logo=youtube" alt="YouTube"></a>
 </p>
 
-</div>
+## [▶️YouTube🔴 Video of Robot in Action!](https://youtu.be/bbrFn3aFLaA)
 
+</div>
 
 
 
