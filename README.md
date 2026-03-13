@@ -60,6 +60,7 @@ If you want to Source all the parts yourself and build your own follow these ste
 - [PAROL6 Gemini LLM vision control](https://github.com/AlvarEhr/PAROL6-Python-API-Gemini-Vision-Public)
 - [PAROL6 Pilot webgui](https://github.com/jointAxis77/pilot)
 - [Another GUI](https://github.com/jakubgrzebien1234-creator/PAROL6_GUI)
+- [Tic Tac Toe with vision](https://github.com/lennardkiebler-cryptoii/Tic-Tac-Toe-Robot-Project-Parol6/tree/main)
   
 ## 🌐 More about PAROL6 robotic arm
 
