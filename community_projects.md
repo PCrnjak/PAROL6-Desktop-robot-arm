@@ -19,6 +19,8 @@ These are third-party projects, not maintained by Source Robotics. Use at your o
 | [Parol6_Better_Command](https://github.com/thousands-star/Parol6_Better_Command) | Commander software refactored for easier editing, with vision systems |
 | [PAROL6 Pilot](https://github.com/jointAxis77/pilot) | Web GUI for controlling PAROL6 |
 | [PAROL6_GUI](https://github.com/jakubgrzebien1234-creator/PAROL6_GUI) | Alternative desktop GUI |
+| [parol6_commander](https://github.com/Lyczko0/parol6_commander) | Web GUI (NiceGUI + ROS 2 + MoveIt 2) for calibrating, jogging and programming PAROL6 |
+| [Parol6-firmware](https://github.com/Lyczko0/Parol6-firmware) | Teensy 4.1 motion firmware with ROS 2 integration over micro-ROS |
 
 ## 🤖 Vision & AI
 
