@@ -176,7 +176,7 @@ void setup()
   SPI.setMOSI(MOSI);
   SPI.setMISO(MISO);
   SPI.setSCLK(SCK);
-  SPI.setClockDivider(SPI_CLOCK_DIV4); // High speed (180 / 4 = 45 MHz SPI_1 speed)
+  SPI.beginTransaction(SPISettings(45000000, MSBFIRST, SPI_MODE0));
   SPI.begin();
   // NOTE this delay is needed for normal operation of Power_switch_managment
   delay(200);
